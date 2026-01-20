@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "BBTVMediaKit",
+    name: "BBSDK",
     platforms: [
         .iOS(.v13) // Adjust the minimum iOS version as needed
     ],
     products: [
         .library(
-            name: "BBMediaAugmentationKit",
-            targets: ["BBTVMediaKitWrapper"]
+            name: "BBSDK",
+            targets: ["BBSDKWrapper"]
         ),
     ],
     dependencies: [
@@ -22,13 +22,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BBTVMediaKit",
-            path: "Frameworks/BBMediaKit.xcframework"
+            name: "BBTVSDK",
+            path: "Frameworks/BBSDK.xcframework"
         ),
         .target(
-            name: "BBTVMediaKitWrapper",
+            name: "BBSDKWrapper",
             dependencies: [
-                .target(name: "BBTVMediaKit"),
+                .target(name: "BBTVSDK"),
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
                 .product(name: "SocketIO", package: "socket.io-client-swift"),
                 .product(name: "DatadogCore", package: "dd-sdk-ios"),
