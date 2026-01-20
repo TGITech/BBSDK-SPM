@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "BBSDK",
+    name: "BBSDK-SPM",
     platforms: [
         .iOS(.v13) // Adjust the minimum iOS version as needed
     ],
     products: [
         .library(
-            name: "BBSDK",
+            name: "BBSDK-SPM",
             targets: ["BBSDKWrapper"]
         ),
     ],
@@ -22,13 +22,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BBTVSDK",
+            name: "BBSDK",
             path: "Frameworks/BBSDK.xcframework"
         ),
         .target(
             name: "BBSDKWrapper",
             dependencies: [
-                .target(name: "BBTVSDK"),
+                .target(name: "BBSDK"),
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
                 .product(name: "SocketIO", package: "socket.io-client-swift"),
                 .product(name: "DatadogCore", package: "dd-sdk-ios"),
