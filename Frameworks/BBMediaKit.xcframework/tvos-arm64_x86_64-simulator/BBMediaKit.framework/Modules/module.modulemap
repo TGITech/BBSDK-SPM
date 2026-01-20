@@ -1,0 +1,6 @@
+framework module BBMediaKit {
+  umbrella header "BBMediaKit.h"
+  export *
+
+  module * { export * }
+}

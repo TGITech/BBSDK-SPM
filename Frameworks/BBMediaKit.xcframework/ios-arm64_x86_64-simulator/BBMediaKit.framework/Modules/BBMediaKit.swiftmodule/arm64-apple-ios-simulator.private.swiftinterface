@@ -1,0 +1,288 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BBMediaKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import AVKit
+import Accelerate
+@_exported import BBMediaKit
+import CoreGraphics
+import CoreImage
+import CoreMedia
+import CoreText
+import CoreVideo
+import DatadogLogs
+import Foundation
+import MachO
+import Metal
+import MetalKit
+import QuartzCore
+import SocketIO
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import VideoToolbox
+import WebKit
+import ZIPFoundation
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+import simd
+public enum BBVideoResolution : Swift.String, Swift.Hashable, Swift.Codable {
+  case auto
+  case p224
+  case p360
+  case p540
+  case p720
+  case p1080
+  public var title: Swift.String {
+    get
+  }
+  public var size: CoreFoundation.CGSize {
+    get
+  }
+  public var bitrate: Swift.UInt {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BBEnvironment : Swift.String, Swift.Hashable, Swift.Codable, Swift.CaseIterable {
+  case prod
+  case dev
+  public var title: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [BBMediaKit.BBEnvironment]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [BBMediaKit.BBEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension BBMediaKit.BBEnvironment : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum BBFpsOption : Swift.Double {
+  case fps59
+  case fps29
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Double)
+  #endif
+  public typealias RawValue = Swift.Double
+  public var rawValue: Swift.Double {
+    get
+  }
+}
+public class BBSessionConfiguration {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(mkID: Swift.String? = nil, streamURL: Swift.String? = nil, fps: BBMediaKit.BBFpsOption, timecodesFolder: Swift.String = "", offsetList: [BBMediaKit.BBOffset] = [], isMP4: Swift.Bool = true, jsonID: Swift.String? = nil, videoResolution: BBMediaKit.BBVideoResolution? = nil, environment: BBMediaKit.BBEnvironment = .prod)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class BBSecurityProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func handleAccessToken(token: Swift.String, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getCloudfrontCookies(gameId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public enum BBVersion {
+  public static let value: Swift.String
+}
+public enum BBScalingMode : Swift.Int {
+  case fit
+  case zoom
+  case stretch
+  public var stringValue: Swift.String {
+    get
+  }
+  public var videoGravity: AVFoundation.AVLayerVideoGravity {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol BBMediaSessionErrorDelegate : AnyObject {
+  func mediaSessionDidError(_ sender: BBMediaKit.BBMediaSession, error: any Swift.Error)
+  func mediaSessionDidFailOnError(_ sender: BBMediaKit.BBMediaSession, error: any Swift.Error)
+}
+public protocol BBMediaSessionDelegate : BBMediaKit.BBMediaSessionErrorDelegate {
+  func mediaSession(_ sender: BBMediaKit.BBMediaSession, didUpdateGlobalAugmentationState isGlobalAugmentationEnabled: Swift.Bool)
+  func mediaSessionDidBeginShotRendering(adID: Swift.String, adURL: Swift.String)
+  func mediaSessionDidEndShotRendering(adID: Swift.String, adURL: Swift.String)
+  func mediaSessionDidRegisterShot(_ sender: BBMediaKit.BBMediaSession, adID: Swift.String, adURL: Swift.String, averagePercenOfScreen: CoreFoundation.CGFloat, averagePercenOfAd: CoreFoundation.CGFloat, duration: CoreMedia.CMTime)
+  func mediaSessionDidRegisterTap(_ sender: BBMediaKit.BBMediaSession, adID: Swift.String, redirectURL: Foundation.URL)
+}
+public protocol BBMediaSessionControlling : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var contentView: UIKit.UIView? { get set }
+  #endif
+  var allowRenderVideoLayer: Swift.Bool { get set }
+  var allowRenderAugmentationLayer: Swift.Bool { get set }
+  var allowRenderCPU: Swift.Bool { get set }
+  var allowRenderDeviceFPS: Swift.Bool { get set }
+  var allowRenderStreamFPS: Swift.Bool { get set }
+  var allowRenderResolution: Swift.Bool { get set }
+  var allowRenderTimer: Swift.Bool { get set }
+  var allowRenderLOD: Swift.Bool { get set }
+  var allowRenderTimecode: Swift.Bool { get set }
+  var allowRenderMemory: Swift.Bool { get set }
+  var allowRenderClosedCaptions: Swift.Bool { get set }
+  var allowRendererMSAA: Swift.Bool { get set }
+  var allowRendererMipMap: Swift.Bool { get set }
+  var allowRendererAnisotropic: Swift.Bool { get set }
+  var isDebug: Swift.Bool { get set }
+  var scalingMode: BBMediaKit.BBScalingMode { get set }
+  func toggle(isEnabled: Swift.Bool)
+  func begin()
+  func end()
+  func handlePipWillStart()
+  func handlePipDidStart()
+  func handlePipWillStop()
+  func handlePipDidStop()
+  func handlePipRestoreUI()
+  func handleAdStarted()
+  func handleAdFinished()
+  func handleAdBreakStarted()
+  func handleAdBreakEnd()
+  func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+}
+final public class BBMediaSession : BBMediaKit.BBMediaSessionControlling {
+  #if compiler(>=5.3) && $NonescapableTypes
+  weak final public var contentView: UIKit.UIView? {
+    get
+    set
+  }
+  #endif
+  weak final public var delegate: (any BBMediaKit.BBMediaSessionDelegate)? {
+    get
+    set
+  }
+  @available(*, unavailable, message: "Use init(playerLayer:player:configuration:) instead.")
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(playerLayer: QuartzCore.CALayer? = nil, player: AVFoundation.AVPlayer? = nil, configuration: BBMediaKit.BBSessionConfiguration)
+  #endif
+  final public var allowRenderVideoLayer: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderAugmentationLayer: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderCPU: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderDeviceFPS: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderStreamFPS: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderResolution: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderTimer: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderLOD: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderTimecode: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderMemory: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRenderClosedCaptions: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRendererMSAA: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRendererMipMap: Swift.Bool {
+    get
+    set
+  }
+  final public var allowRendererAnisotropic: Swift.Bool {
+    get
+    set
+  }
+  final public var isDebug: Swift.Bool {
+    get
+    set
+  }
+  final public var scalingMode: BBMediaKit.BBScalingMode {
+    get
+    set
+  }
+  final public func toggle(isEnabled: Swift.Bool)
+  final public func begin()
+  final public func end()
+  final public func handlePipWillStart()
+  final public func handlePipDidStart()
+  final public func handlePipWillStop()
+  final public func handlePipDidStop()
+  final public func handlePipRestoreUI()
+  final public func handleAdStarted()
+  final public func handleAdFinished()
+  final public func handleAdBreakStarted()
+  final public func handleAdBreakEnd()
+  final public func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+  @objc deinit
+}
+public struct BBGameInfo : Swift.Codable {
+  public let bucketName: Swift.String
+  public let customerId: Swift.String?
+  public let customerName: Swift.String?
+  public let offsets: [BBMediaKit.BBOffset]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BBOffset : Swift.Codable {
+  public let frame: Swift.Int64
+  public let offset: Swift.Int64
+  public let timecode: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension BBMediaKit.BBVideoResolution : Swift.RawRepresentable {}
+extension BBMediaKit.BBEnvironment : Swift.RawRepresentable {}
+extension BBMediaKit.BBFpsOption : Swift.Equatable {}
+extension BBMediaKit.BBFpsOption : Swift.Hashable {}
+extension BBMediaKit.BBFpsOption : Swift.RawRepresentable {}
+extension BBMediaKit.BBScalingMode : Swift.Equatable {}
+extension BBMediaKit.BBScalingMode : Swift.Hashable {}
+extension BBMediaKit.BBScalingMode : Swift.RawRepresentable {}
