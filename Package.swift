@@ -15,6 +15,11 @@ let package = Package(
             targets: ["BBSDKWrapper"]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/weichsel/ZIPFoundation.git", from: "0.9.19"),
+        .package(url: "https://github.com/socketio/socket.io-client-swift", from: "16.1.1"),
+        .package(url: "https://github.com/Datadog/dd-sdk-ios.git", from: "2.18.0")
+    ],
     targets: [
         .binaryTarget(
             name: "BBSDK",
@@ -23,7 +28,11 @@ let package = Package(
         .target(
             name: "BBSDKWrapper",
             dependencies: [
-                .target(name: "BBSDK")
+                .target(name: "BBSDK"),
+                .product(name: "ZIPFoundation", package: "ZIPFoundation"),
+                .product(name: "SocketIO", package: "socket.io-client-swift"),
+                .product(name: "DatadogCore", package: "dd-sdk-ios"),
+                .product(name: "DatadogLogs", package: "dd-sdk-ios")
             ]
         )
     ]
