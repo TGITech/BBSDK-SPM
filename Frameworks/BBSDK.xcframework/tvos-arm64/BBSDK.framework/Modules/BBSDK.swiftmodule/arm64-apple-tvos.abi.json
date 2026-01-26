@@ -9089,21 +9089,14 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/OTT\/iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4777,
+      "offset": 5286,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/OTT\/iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5284,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/OTT\/iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6021,
+      "offset": 6023,
       "length": 5,
       "value": "false"
     },
