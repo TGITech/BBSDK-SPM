@@ -84,7 +84,7 @@ public enum BBFPS {
 }
 public class BBSessionConfiguration {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(mkID: Swift.String? = nil, streamURL: Swift.String? = nil, fps: BBSDK.BBFPS, timecodesFolder: Swift.String = "", offsetList: [BBSDK.BBOffset] = [], isMP4: Swift.Bool = true, jsonID: Swift.String? = nil, videoResolution: BBSDK.BBVideoResolution? = nil, environment: BBSDK.BBEnvironment = .prod)
+  public init?(mediaID: Swift.String? = nil, streamURL: Swift.String? = nil, fps: BBSDK.BBFPS, timecodesFolder: Swift.String = "", offsetList: [BBSDK.BBOffset] = [], isMP4: Swift.Bool = true, jsonID: Swift.String? = nil, videoResolution: BBSDK.BBVideoResolution? = nil, environment: BBSDK.BBEnvironment = .dev)
   #endif
   @objc deinit
 }

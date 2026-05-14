@@ -1704,7 +1704,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(mkID:streamURL:fps:timecodesFolder:offsetList:isMP4:jsonID:videoResolution:environment:)",
+            "printedName": "init(mediaID:streamURL:fps:timecodesFolder:offsetList:isMP4:jsonID:videoResolution:environment:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1824,8 +1824,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5BBSDK22BBSessionConfigurationC4mkID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA5BBFPSOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
-            "mangledName": "$s5BBSDK22BBSessionConfigurationC4mkID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA5BBFPSOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
+            "usr": "s:5BBSDK22BBSessionConfigurationC7mediaID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA5BBFPSOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
+            "mangledName": "$s5BBSDK22BBSessionConfigurationC7mediaID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA5BBFPSOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
             "moduleName": "BBSDK",
             "declAttributes": [
               "AccessControl"
@@ -9656,21 +9656,21 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 3367,
+      "offset": 3370,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "Array",
-      "offset": 3396,
+      "offset": 3399,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3414,
+      "offset": 3417,
       "length": 4,
       "value": "true"
     },
