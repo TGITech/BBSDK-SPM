@@ -1,6 +1,0 @@
-framework module BBSDK {
-  umbrella header "BBSDK.h"
-  export *
-
-  module * { export * }
-}
