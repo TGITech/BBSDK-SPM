@@ -8627,14 +8627,14 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 10356,
+      "offset": 10372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 23990,
+      "offset": 24194,
       "length": 5,
       "value": "\"mp4\""
     },
@@ -8718,175 +8718,175 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1939,
+      "offset": 1942,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2278,
+      "offset": 2281,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2615,
+      "offset": 2618,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2752,
+      "offset": 2755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2986,
+      "offset": 2989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3221,
+      "offset": 3224,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3455,
+      "offset": 3458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3667,
+      "offset": 3670,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3876,
+      "offset": 3879,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4103,
+      "offset": 4106,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4322,
+      "offset": 4325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4471,
+      "offset": 4474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4629,
+      "offset": 4632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5422,
+      "offset": 5425,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5361,
+      "offset": 5364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6140,
+      "offset": 6143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6680,
+      "offset": 6683,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6732,
+      "offset": 6735,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6784,
+      "offset": 6787,
       "length": 3,
       "value": "240"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6837,
+      "offset": 6840,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6918,
+      "offset": 6921,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6970,
+      "offset": 6973,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7022,
+      "offset": 7025,
       "length": 3,
       "value": "420"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7075,
+      "offset": 7078,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "Array",
-      "offset": 16875,
+      "offset": 16878,
       "length": 2,
       "value": "[]"
     },
@@ -8900,21 +8900,21 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 2693,
+      "offset": 2696,
       "length": 34,
       "value": "\"BBCanvasRenderer.adTexture.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3830,
+      "offset": 3833,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3844,
+      "offset": 3847,
       "length": 3,
       "value": "720"
     },
@@ -9495,98 +9495,98 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "Array",
-      "offset": 3919,
+      "offset": 3922,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 4123,
+      "offset": 4126,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 4130,
+      "offset": 4133,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 4151,
+      "offset": 4154,
       "length": 6,
       "value": "\"Test\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "Array",
-      "offset": 4179,
+      "offset": 4182,
       "length": 19,
       "value": "[0, 0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "Array",
-      "offset": 4224,
+      "offset": 4227,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6376,
+      "offset": 6379,
       "length": 5,
       "value": "\"FPS\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6404,
+      "offset": 6407,
       "length": 8,
       "value": "\"Height\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6439,
+      "offset": 6442,
       "length": 12,
       "value": "\"Interlaced\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6473,
+      "offset": 6476,
       "length": 7,
       "value": "\"Width\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 7283,
+      "offset": 7286,
       "length": 9,
       "value": "\"shot3pt\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 8253,
+      "offset": 8259,
       "length": 6,
       "value": "\"locs\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 8280,
+      "offset": 8286,
       "length": 8,
       "value": "\"player\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 9024,
+      "offset": 9038,
       "length": 10,
       "value": "\"tranform\""
     },
@@ -10482,16 +10482,9 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1554,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
-      "kind": "IntegerLiteral",
       "offset": 1557,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
@@ -10510,7 +10503,7 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1591,
+      "offset": 1566,
       "length": 1,
       "value": "0"
     },
@@ -10519,14 +10512,14 @@
       "kind": "IntegerLiteral",
       "offset": 1594,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
       "offset": 1597,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
@@ -10538,7 +10531,7 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1628,
+      "offset": 1603,
       "length": 1,
       "value": "0"
     },
@@ -10554,19 +10547,19 @@
       "kind": "IntegerLiteral",
       "offset": 1634,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1665,
+      "offset": 1640,
       "length": 1,
       "value": "0"
     },
@@ -10589,12 +10582,12 @@
       "kind": "IntegerLiteral",
       "offset": 1674,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1761,
+      "offset": 1677,
       "length": 1,
       "value": "1"
     },
@@ -10603,7 +10596,7 @@
       "kind": "IntegerLiteral",
       "offset": 1764,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
@@ -10622,7 +10615,7 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1798,
+      "offset": 1773,
       "length": 1,
       "value": "0"
     },
@@ -10630,15 +10623,15 @@
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
       "offset": 1801,
-      "length": 2,
-      "value": "-1"
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1805,
-      "length": 1,
-      "value": "0"
+      "offset": 1804,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
@@ -10650,7 +10643,7 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1836,
+      "offset": 1811,
       "length": 1,
       "value": "0"
     },
@@ -10666,19 +10659,19 @@
       "kind": "IntegerLiteral",
       "offset": 1842,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
       "offset": 1845,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1873,
+      "offset": 1848,
       "length": 1,
       "value": "0"
     },
@@ -10701,19 +10694,26 @@
       "kind": "IntegerLiteral",
       "offset": 1882,
       "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1885,
+      "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1950,
+      "offset": 1953,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1990,
+      "offset": 1993,
       "length": 1,
       "value": "3"
     },

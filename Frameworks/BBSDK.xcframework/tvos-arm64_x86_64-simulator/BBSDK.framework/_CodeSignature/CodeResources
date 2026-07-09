@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kDGskO36MkfssuWTYX9CBHfBIIk=
+		bqdDaYfIOmCsLTVMj4sDFVU+xhs=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		DDvjqgxkRAwclyAFcBwlo+t/T3Y=
+		GKFW73C9ntv850XDbFoJNiF+klk=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		j3Acr1VG4OAbY49lSTfvaXMeLN4=
+		wiuBQK23jS2PLabc8J87BG493U8=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		DDvjqgxkRAwclyAFcBwlo+t/T3Y=
+		GKFW73C9ntv850XDbFoJNiF+klk=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		dIySgFBTtT5n8zRRJFB84uyUOAo=
+		Nb/oufphv7nNb4I102jKe0B4Vbw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -902,7 +902,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aX4YU122Kbi+4HYLzFhIMzkJPJJItKsdveJEw1UeEeY=
+			3EdEsp4aTlUwkqkiYIwT/Jvc93v9LWx3tsVafA4IZ8E=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -930,14 +930,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0qWU3bli9EpIKSzAlDo2LpCrGMTfiwrFVA3mv1d/eI=
+			Py8h6yPO0YCdXpuwhH40yxpVpHdIkAoxhtFpywROWD0=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aX4YU122Kbi+4HYLzFhIMzkJPJJItKsdveJEw1UeEeY=
+			3EdEsp4aTlUwkqkiYIwT/Jvc93v9LWx3tsVafA4IZ8E=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -965,7 +965,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zMdhHstyah+k6prYk5U/hEJ5Z1TWPaRK3kslSIwmw3o=
+			ohiY5swGOxmTryAkHkEB9zNb8lrcY20b6PhraiixkDQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
