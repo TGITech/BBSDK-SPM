@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yhe3JQtY9Bz50N71uLngJbIp3e0=
+		G96pRegN4qbZ3oS1dwGTuvi/OU4=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Lhz8E3SpjtMtDNELoQnTNehI6Os=
+		dr3yr3YU8Nyy0rMOBE+g1iGmLZE=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Nkq6sS0o7C5dCBA0yH7DkX9NJpc=
+		mN+CjCIzsHH/pmh9aF7lHVqXHZ4=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Nkq6sS0o7C5dCBA0yH7DkX9NJpc=
+		mN+CjCIzsHH/pmh9aF7lHVqXHZ4=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		h6XxUJ1hW+SGhRfU7yVdRmxcqsg=
+		z+c9ZmCRJ00CXYmgPw9z1hfTpzc=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Lhz8E3SpjtMtDNELoQnTNehI6Os=
+		dr3yr3YU8Nyy0rMOBE+g1iGmLZE=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		v6ciSBAhipOedx5c6yASbNTBQcM=
+		86R7y5pW8PGDgwDhehf9EUPJ0oA=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v6ciSBAhipOedx5c6yASbNTBQcM=
+		86R7y5pW8PGDgwDhehf9EUPJ0oA=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NTxi72vtXn7TZYMop0DLYO1F9+o=
+		3zA1rpDCdPDRWtDawAXee6doXCE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -902,14 +902,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qwkDvS3QM/34QoR2wAVL52k/p0cBvfNEkT1DsUXhoXA=
+			sOaIus9R5v0kFf0LjnNfANhO9ARlbaR7m08dYOkYm1k=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9/r6CTOaeb6i54zt7B9vPIpz9kPEopLl/fb2tNPLhg=
+			0cRUowzYwqCnk9V7T7lBi3twhbyUbZmb3hL74bSmLHA=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -923,28 +923,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9/r6CTOaeb6i54zt7B9vPIpz9kPEopLl/fb2tNPLhg=
+			0cRUowzYwqCnk9V7T7lBi3twhbyUbZmb3hL74bSmLHA=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KE4fvANv4YYYINodgZSJNgt01mWn10OhsYuVtMP4Qc0=
+			87uXONXzYMWVi181XGs7Vkm9Z8GiwEzAosLUUwNBuY4=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qwkDvS3QM/34QoR2wAVL52k/p0cBvfNEkT1DsUXhoXA=
+			sOaIus9R5v0kFf0LjnNfANhO9ARlbaR7m08dYOkYm1k=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VlDRhYN+HAK6vA2MsGGGK1gioF8lYmg0/l/ZvuVVAwg=
+			5GVu9DswD7lp860jk6036l/di9fUDG6ZEvoPRq1T5Pw=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -958,14 +958,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VlDRhYN+HAK6vA2MsGGGK1gioF8lYmg0/l/ZvuVVAwg=
+			5GVu9DswD7lp860jk6036l/di9fUDG6ZEvoPRq1T5Pw=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GTVTZIxNElN1t/5hZ+WaZDj6fxZ4r238cjNmM7LsaoU=
+			R4qRf3D0l8cmNABV2EMpd08+ZPoY76JlU9tky2mRmvI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

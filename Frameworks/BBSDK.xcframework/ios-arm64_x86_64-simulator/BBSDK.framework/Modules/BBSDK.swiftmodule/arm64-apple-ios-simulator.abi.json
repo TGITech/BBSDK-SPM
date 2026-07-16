@@ -8710,7 +8710,8 @@
         "declKind": "Import",
         "moduleName": "BBSDK",
         "declAttributes": [
-          "ImplementationOnly"
+          "ImplementationOnly",
+          "RawDocComment"
         ]
       },
       {
@@ -8718,7 +8719,10 @@
         "name": "DatadogLogs",
         "printedName": "DatadogLogs",
         "declKind": "Import",
-        "moduleName": "BBSDK"
+        "moduleName": "BBSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -13723,49 +13727,49 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 2034,
+      "offset": 2308,
       "length": 73,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 2342,
       "length": 3,
       "value": "\" iOS \""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2380,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 4932,
+      "offset": 5206,
       "length": 52,
       "value": "\"https:\/\/dwu3k7rrxk5s3.cloudfront.net\/metrics\/1.gif\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 5063,
+      "offset": 5337,
       "length": 66,
       "value": "\"9d8b7e70244f0ce37bfaf71b4dd3243b61ea7312d36f0c7f012666168e979040\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 5170,
+      "offset": 5444,
       "length": 37,
       "value": "\"https:\/\/segmentation.virtualott.com\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 5313,
+      "offset": 5587,
       "length": 29,
       "value": "\"com.bbmediakit.logger.timer\""
     },
