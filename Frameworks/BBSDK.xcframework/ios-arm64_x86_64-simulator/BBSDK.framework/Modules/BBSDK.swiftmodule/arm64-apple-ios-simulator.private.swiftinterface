@@ -11,16 +11,20 @@ import CoreImage
 import CoreMedia
 import CoreText
 import CoreVideo
+import DatadogLogs
 import Foundation
+import ImageIO
 import MachO
 import Metal
 import MetalKit
 import QuartzCore
+import Security
 import Swift
 import UIKit
 import UniformTypeIdentifiers
 import VideoToolbox
 import WebKit
+import ZIPFoundation
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -70,6 +74,16 @@ public enum BBEnvironment : Swift.String, Swift.Hashable, Swift.Codable, Swift.C
 }
 extension BBSDK.BBEnvironment : Swift.CustomStringConvertible {
   public var description: Swift.String {
+    get
+  }
+}
+public enum BBSide {
+  case unspecified
+  case left
+  case right
+  public static func == (a: BBSDK.BBSide, b: BBSDK.BBSide) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -124,15 +138,16 @@ public protocol BBMediaSessionErrorDelegate : AnyObject {
 }
 public protocol BBMediaSessionDelegate : BBSDK.BBMediaSessionErrorDelegate {
   func mediaSession(_ sender: BBSDK.BBMediaSession, didUpdateGlobalAugmentationState isGlobalAugmentationEnabled: Swift.Bool)
-  func mediaSessionDidBeginShotRendering(adID: Swift.String, adURL: Swift.String)
-  func mediaSessionDidEndShotRendering(adID: Swift.String, adURL: Swift.String)
-  func mediaSessionDidRegisterShot(_ sender: BBSDK.BBMediaSession, adID: Swift.String, adURL: Swift.String, averagePercenOfScreen: CoreFoundation.CGFloat, averagePercenOfAd: CoreFoundation.CGFloat, duration: CoreMedia.CMTime)
+  func mediaSessionDidBeginShotRendering(adID: Swift.String, logoID: Swift.String, adURL: Swift.String)
+  func mediaSessionDidEndShotRendering(adID: Swift.String, logoID: Swift.String, adURL: Swift.String)
+  func mediaSessionDidRegisterShot(_ sender: BBSDK.BBMediaSession, adID: Swift.String, logoID: Swift.String, adURL: Swift.String, averagePercenOfScreen: CoreFoundation.CGFloat, averagePercenOfAd: CoreFoundation.CGFloat, duration: CoreMedia.CMTime)
   func mediaSessionDidRegisterTap(_ sender: BBSDK.BBMediaSession, adID: Swift.String, redirectURL: Foundation.URL)
 }
 public protocol BBMediaSessionControlling : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   var contentView: UIKit.UIView? { get set }
   #endif
+  var isAugmentationLayerEnabled: Swift.Bool { get set }
   var allowRenderVideoLayer: Swift.Bool { get set }
   var allowRenderAugmentationLayer: Swift.Bool { get set }
   var allowRenderCPU: Swift.Bool { get set }
@@ -152,6 +167,7 @@ public protocol BBMediaSessionControlling : AnyObject {
   func toggle(isEnabled: Swift.Bool)
   func begin()
   func end()
+  func destroy()
   func handlePipWillStart()
   func handlePipDidStart()
   func handlePipWillStop()
@@ -165,20 +181,26 @@ public protocol BBMediaSessionControlling : AnyObject {
 }
 final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
   #if compiler(>=5.3) && $NonescapableTypes
-  weak final public var contentView: UIKit.UIView? {
+  final public var contentView: UIKit.UIView? {
     get
     set
   }
   #endif
-  weak final public var delegate: (any BBSDK.BBMediaSessionDelegate)? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var delegate: (any BBSDK.BBMediaSessionDelegate)? {
     get
     set
   }
+  #endif
   @available(*, unavailable, message: "Use init(playerLayer:player:configuration:) instead.")
   public init()
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(playerLayer: QuartzCore.CALayer? = nil, player: AVFoundation.AVPlayer? = nil, configuration: BBSDK.BBSessionConfiguration)
+  public init?(playerLayer: QuartzCore.CALayer? = nil, player: AVFoundation.AVPlayer? = nil, configuration: BBSDK.BBSessionConfiguration, additionalDetails: [Swift.String : Swift.String]? = nil)
   #endif
+  final public var isAugmentationLayerEnabled: Swift.Bool {
+    get
+    set
+  }
   final public var allowRenderVideoLayer: Swift.Bool {
     get
     set
@@ -246,6 +268,7 @@ final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
   final public func toggle(isEnabled: Swift.Bool)
   final public func begin()
   final public func end()
+  final public func destroy()
   final public func handlePipWillStart()
   final public func handlePipDidStart()
   final public func handlePipWillStop()
@@ -275,6 +298,8 @@ public struct BBOffset : Swift.Codable {
 }
 extension BBSDK.BBVideoResolution : Swift.RawRepresentable {}
 extension BBSDK.BBEnvironment : Swift.RawRepresentable {}
+extension BBSDK.BBSide : Swift.Equatable {}
+extension BBSDK.BBSide : Swift.Hashable {}
 extension BBSDK.BBFPS : Swift.Equatable {}
 extension BBSDK.BBFPS : Swift.Hashable {}
 extension BBSDK.BBScalingMode : Swift.Equatable {}
