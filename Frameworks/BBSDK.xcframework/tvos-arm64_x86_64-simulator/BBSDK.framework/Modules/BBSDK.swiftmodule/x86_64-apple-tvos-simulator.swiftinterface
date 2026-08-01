@@ -5,6 +5,7 @@
 import AVFoundation
 import AVKit
 import Accelerate
+import AudioToolbox
 @_exported import BBSDK
 import CoreGraphics
 import CoreImage
@@ -19,6 +20,7 @@ import MetalKit
 import QuartzCore
 import Security
 import Swift
+import SwiftDraw
 import UIKit
 import UniformTypeIdentifiers
 import VideoToolbox
@@ -85,10 +87,13 @@ public enum BBSide {
     get
   }
 }
-public enum BBFPS {
-  case fps2997
+public enum BBFpsOption {
   case fps5994
-  public static func == (a: BBSDK.BBFPS, b: BBSDK.BBFPS) -> Swift.Bool
+  case fps2997
+  public var value: Swift.Double {
+    get
+  }
+  public static func == (a: BBSDK.BBFpsOption, b: BBSDK.BBFpsOption) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -96,7 +101,7 @@ public enum BBFPS {
 }
 public class BBSessionConfiguration {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(mediaID: Swift.String? = nil, streamURL: Swift.String? = nil, fps: BBSDK.BBFPS, timecodesFolder: Swift.String = "", offsetList: [BBSDK.BBOffset] = [], isMP4: Swift.Bool = true, jsonID: Swift.String? = nil, videoResolution: BBSDK.BBVideoResolution? = nil, environment: BBSDK.BBEnvironment = .dev)
+  public init?(mediaID: Swift.String? = nil, streamURL: Swift.String? = nil, fps: BBSDK.BBFpsOption, timecodesFolder: Swift.String = "", offsetList: [BBSDK.BBOffset] = [], isMP4: Swift.Bool = true, jsonID: Swift.String? = nil, videoResolution: BBSDK.BBVideoResolution? = nil, environment: BBSDK.BBEnvironment = .dev)
   #endif
   @objc deinit
 }
@@ -298,8 +303,8 @@ extension BBSDK.BBVideoResolution : Swift.RawRepresentable {}
 extension BBSDK.BBEnvironment : Swift.RawRepresentable {}
 extension BBSDK.BBSide : Swift.Equatable {}
 extension BBSDK.BBSide : Swift.Hashable {}
-extension BBSDK.BBFPS : Swift.Equatable {}
-extension BBSDK.BBFPS : Swift.Hashable {}
+extension BBSDK.BBFpsOption : Swift.Equatable {}
+extension BBSDK.BBFpsOption : Swift.Hashable {}
 extension BBSDK.BBScalingMode : Swift.Equatable {}
 extension BBSDK.BBScalingMode : Swift.Hashable {}
 extension BBSDK.BBScalingMode : Swift.RawRepresentable {}

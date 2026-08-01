@@ -657,6 +657,13 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftDraw",
+        "printedName": "SwiftDraw",
+        "declKind": "Import",
+        "moduleName": "BBSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CoreMedia",
         "printedName": "CoreMedia",
         "declKind": "Import",
@@ -686,6 +693,13 @@
         "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BBSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
         "declKind": "Import",
         "moduleName": "BBSDK"
       },
@@ -1920,46 +1934,9 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "BBFPS",
-        "printedName": "BBFPS",
+        "name": "BBFpsOption",
+        "printedName": "BBFpsOption",
         "children": [
-          {
-            "kind": "Var",
-            "name": "fps2997",
-            "printedName": "fps2997",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BBSDK.BBFPS.Type) -> BBSDK.BBFPS",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BBFPS",
-                    "printedName": "BBSDK.BBFPS",
-                    "usr": "s:5BBSDK5BBFPSO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BBSDK.BBFPS.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BBFPS",
-                        "printedName": "BBSDK.BBFPS",
-                        "usr": "s:5BBSDK5BBFPSO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:5BBSDK5BBFPSO7fps2997yA2CmF",
-            "mangledName": "$s5BBSDK5BBFPSO7fps2997yA2CmF",
-            "moduleName": "BBSDK"
-          },
           {
             "kind": "Var",
             "name": "fps5994",
@@ -1968,24 +1945,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BBSDK.BBFPS.Type) -> BBSDK.BBFPS",
+                "printedName": "(BBSDK.BBFpsOption.Type) -> BBSDK.BBFpsOption",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BBFPS",
-                    "printedName": "BBSDK.BBFPS",
-                    "usr": "s:5BBSDK5BBFPSO"
+                    "name": "BBFpsOption",
+                    "printedName": "BBSDK.BBFpsOption",
+                    "usr": "s:5BBSDK11BBFpsOptionO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BBSDK.BBFPS.Type",
+                    "printedName": "BBSDK.BBFpsOption.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BBFPS",
-                        "printedName": "BBSDK.BBFPS",
-                        "usr": "s:5BBSDK5BBFPSO"
+                        "name": "BBFpsOption",
+                        "printedName": "BBSDK.BBFpsOption",
+                        "usr": "s:5BBSDK11BBFpsOptionO"
                       }
                     ]
                   }
@@ -1993,9 +1970,86 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:5BBSDK5BBFPSO7fps5994yA2CmF",
-            "mangledName": "$s5BBSDK5BBFPSO7fps5994yA2CmF",
+            "usr": "s:5BBSDK11BBFpsOptionO7fps5994yA2CmF",
+            "mangledName": "$s5BBSDK11BBFpsOptionO7fps5994yA2CmF",
             "moduleName": "BBSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "fps2997",
+            "printedName": "fps2997",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BBSDK.BBFpsOption.Type) -> BBSDK.BBFpsOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFpsOption",
+                    "printedName": "BBSDK.BBFpsOption",
+                    "usr": "s:5BBSDK11BBFpsOptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BBSDK.BBFpsOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BBFpsOption",
+                        "printedName": "BBSDK.BBFpsOption",
+                        "usr": "s:5BBSDK11BBFpsOptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5BBSDK11BBFpsOptionO7fps2997yA2CmF",
+            "mangledName": "$s5BBSDK11BBFpsOptionO7fps2997yA2CmF",
+            "moduleName": "BBSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK11BBFpsOptionO5valueSdvp",
+            "mangledName": "$s5BBSDK11BBFpsOptionO5valueSdvp",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK11BBFpsOptionO5valueSdvg",
+                "mangledName": "$s5BBSDK11BBFpsOptionO5valueSdvg",
+                "moduleName": "BBSDK",
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -2010,20 +2064,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BBFPS",
-                "printedName": "BBSDK.BBFPS",
-                "usr": "s:5BBSDK5BBFPSO"
+                "name": "BBFpsOption",
+                "printedName": "BBSDK.BBFpsOption",
+                "usr": "s:5BBSDK11BBFpsOptionO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "BBFPS",
-                "printedName": "BBSDK.BBFPS",
-                "usr": "s:5BBSDK5BBFPSO"
+                "name": "BBFpsOption",
+                "printedName": "BBSDK.BBFpsOption",
+                "usr": "s:5BBSDK11BBFpsOptionO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5BBSDK5BBFPSO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s5BBSDK5BBFPSO2eeoiySbAC_ACtFZ",
+            "usr": "s:5BBSDK11BBFpsOptionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5BBSDK11BBFpsOptionO2eeoiySbAC_ACtFZ",
             "moduleName": "BBSDK",
             "static": true,
             "implicit": true,
@@ -2042,8 +2096,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5BBSDK5BBFPSO9hashValueSivp",
-            "mangledName": "$s5BBSDK5BBFPSO9hashValueSivp",
+            "usr": "s:5BBSDK11BBFpsOptionO9hashValueSivp",
+            "mangledName": "$s5BBSDK11BBFpsOptionO9hashValueSivp",
             "moduleName": "BBSDK",
             "implicit": true,
             "accessors": [
@@ -2060,8 +2114,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5BBSDK5BBFPSO9hashValueSivg",
-                "mangledName": "$s5BBSDK5BBFPSO9hashValueSivg",
+                "usr": "s:5BBSDK11BBFpsOptionO9hashValueSivg",
+                "mangledName": "$s5BBSDK11BBFpsOptionO9hashValueSivg",
                 "moduleName": "BBSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2087,16 +2141,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5BBSDK5BBFPSO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s5BBSDK5BBFPSO4hash4intoys6HasherVz_tF",
+            "usr": "s:5BBSDK11BBFpsOptionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5BBSDK11BBFpsOptionO4hash4intoys6HasherVz_tF",
             "moduleName": "BBSDK",
             "implicit": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
-        "usr": "s:5BBSDK5BBFPSO",
-        "mangledName": "$s5BBSDK5BBFPSO",
+        "usr": "s:5BBSDK11BBFpsOptionO",
+        "mangledName": "$s5BBSDK11BBFpsOptionO",
         "moduleName": "BBSDK",
         "declAttributes": [
           "AccessControl"
@@ -2188,9 +2242,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BBFPS",
-                "printedName": "BBSDK.BBFPS",
-                "usr": "s:5BBSDK5BBFPSO"
+                "name": "BBFpsOption",
+                "printedName": "BBSDK.BBFpsOption",
+                "usr": "s:5BBSDK11BBFpsOptionO"
               },
               {
                 "kind": "TypeNominal",
@@ -2260,8 +2314,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5BBSDK22BBSessionConfigurationC7mediaID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA5BBFPSOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
-            "mangledName": "$s5BBSDK22BBSessionConfigurationC7mediaID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA5BBFPSOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
+            "usr": "s:5BBSDK22BBSessionConfigurationC7mediaID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA11BBFpsOptionOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
+            "mangledName": "$s5BBSDK22BBSessionConfigurationC7mediaID9streamURL3fps15timecodesFolder10offsetList5isMP404jsonE015videoResolution11environmentACSgSSSg_AnA11BBFpsOptionOSSSayAA8BBOffsetVGSbAnA07BBVideoQ0OSgAA13BBEnvironmentOtcfc",
             "moduleName": "BBSDK",
             "declAttributes": [
               "AccessControl"
@@ -3172,13 +3226,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BBSDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "BBSDK"
       },
       {
         "kind": "Import",
@@ -3225,6 +3286,23 @@
         "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "BBSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BBSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
         "declKind": "Import",
         "moduleName": "BBSDK"
       },
@@ -3349,13 +3427,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BBSDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "BBSDK"
       },
       {
         "kind": "Import",
@@ -9120,57 +9205,36 @@
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
-      "kind": "FloatLiteral",
-      "offset": 2637,
-      "length": 3,
-      "value": "1.0"
+      "kind": "StringLiteral",
+      "offset": 2906,
+      "length": 32,
+      "value": "\"PossessionPlayerNameBackground\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 2674,
+      "offset": 3033,
       "length": 1,
-      "value": "6"
+      "value": "4"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 2710,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2745,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2792,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2801,
+      "offset": 3042,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 2813,
+      "offset": 3054,
       "length": 1,
-      "value": "6"
+      "value": "4"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 2823,
+      "offset": 3064,
       "length": 2,
       "value": "10"
     },
@@ -9198,112 +9262,140 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 847,
+      "offset": 944,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 950,
+      "offset": 1004,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 1132,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 1117,
+      "offset": 1263,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 1371,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 1334,
+      "offset": 1472,
       "length": 4,
       "value": "7000"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1622,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1669,
+      "offset": 1911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1584,
+      "offset": 1826,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "Array",
+      "offset": 2105,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "Array",
+      "offset": 2326,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 2382,
-      "length": 49,
-      "value": "\"com.bbsdk.bbmetadataworker.isLoadedEnough.queue\""
+      "offset": 3056,
+      "length": 47,
+      "value": "\"com.bbsdk.metadataworker.isLoadedEnough.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 2543,
+      "offset": 3215,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 3289,
+      "offset": 3915,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 3343,
+      "offset": 3969,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 3768,
+      "offset": 4394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 3838,
-      "length": 49,
-      "value": "\"com.bbsdk.bbmetadataworker.resourceLoader.queue\""
+      "offset": 4464,
+      "length": 47,
+      "value": "\"com.bbsdk.metadataworker.resourceLoader.queue\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "StringLiteral",
+      "offset": 4688,
+      "length": 47,
+      "value": "\"com.bbsdk.metadataworker.periodicUpdate.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 10127,
+      "offset": 11672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 23680,
+      "offset": 25477,
       "length": 5,
       "value": "\"mp4\""
     },
@@ -10388,28 +10480,28 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 7629,
+      "offset": 8750,
       "length": 9,
       "value": "\"shot3pt\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 8798,
+      "offset": 9919,
       "length": 6,
       "value": "\"locs\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 8825,
+      "offset": 9946,
       "length": 8,
       "value": "\"player\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 10557,
+      "offset": 11678,
       "length": 10,
       "value": "\"tranform\""
     },
@@ -10731,217 +10823,217 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 15630,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15667,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15704,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15993,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16035,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16072,
+      "offset": 16000,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 16382,
+      "offset": 16209,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
+      "kind": "FloatLiteral",
+      "offset": 16401,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16835,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
+      "kind": "FloatLiteral",
+      "offset": 17037,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
+      "kind": "FloatLiteral",
+      "offset": 17221,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
+      "kind": "FloatLiteral",
+      "offset": 17528,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 17241,
+      "offset": 18387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 17365,
+      "offset": 18511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17449,
+      "offset": 18595,
       "length": 11,
       "value": "\"com.bbsdk\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17472,
+      "offset": 18618,
       "length": 16,
       "value": "\"BBMediaSession\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 17637,
+      "offset": 18783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 18013,
+      "offset": 19159,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 19062,
+      "offset": 20208,
       "length": 46,
       "value": "\"BBMediaSession.currentPlayheadTimecode.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 19721,
+      "offset": 20867,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 21043,
+      "offset": 22189,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 21151,
+      "offset": 22297,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 42101,
+      "offset": 43247,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 42149,
+      "offset": 43295,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 42187,
+      "offset": 43333,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 42231,
+      "offset": 43377,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 42277,
+      "offset": 43423,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 42328,
+      "offset": 43474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 46368,
+      "offset": 47514,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 46428,
+      "offset": 47574,
       "length": 27,
       "value": "\"bbmediakit.mediaDataQueue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 46585,
+      "offset": 47731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 56701,
+      "offset": 57869,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 57790,
+      "offset": 59452,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 58045,
+      "offset": 59707,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 66702,
+      "offset": 68364,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 67227,
+      "offset": 68889,
       "length": 1,
       "value": "0"
     },
@@ -12278,70 +12370,70 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 499,
       "length": 40,
       "value": "\"https:\/\/d23f0hnu1suuxu.cloudfront.net\/\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 555,
+      "offset": 570,
       "length": 38,
       "value": "\"https:\/\/dwu3k7rrxk5s3.cloudfront.net\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 654,
       "length": 16,
       "value": "\"bbtestexternal\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1839,
+      "offset": 1854,
       "length": 41,
       "value": "\"BBSessionConfiguration.customerID.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 2003,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2616,
+      "offset": 2631,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2643,
+      "offset": 2658,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 3394,
+      "offset": 3415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "Array",
-      "offset": 3423,
+      "offset": 3444,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBSessionConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3441,
+      "offset": 3462,
       "length": 4,
       "value": "true"
     },
@@ -12990,9 +13082,9 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBDispalyLinkController.swift",
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Controller\/BBSyncDispalyLinkController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1245,
+      "offset": 1414,
       "length": 2,
       "value": "60"
     },
@@ -13002,6 +13094,13 @@
       "offset": 1221,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Controller\/BBDisplayLinkController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2381,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBPlayerUtility.swift",
@@ -13501,16 +13600,16 @@
       "value": "5"
     },
     {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBAsyncDisplayLinkController.swift",
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Controller\/BBAsyncDisplayLinkController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1767,
+      "offset": 1915,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBAsyncDisplayLinkController.swift",
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Controller\/BBAsyncDisplayLinkController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2024,
+      "offset": 2172,
       "length": 2,
       "value": "60"
     },
