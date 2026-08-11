@@ -660,7 +660,10 @@
         "name": "SwiftDraw",
         "printedName": "SwiftDraw",
         "declKind": "Import",
-        "moduleName": "BBSDK"
+        "moduleName": "BBSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -9206,23 +9209,9 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
       "kind": "StringLiteral",
-      "offset": 2906,
+      "offset": 2927,
       "length": 32,
       "value": "\"PossessionPlayerNameBackground\""
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3033,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3042,
-      "length": 2,
-      "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
@@ -9234,7 +9223,21 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 3064,
+      "offset": 3063,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3075,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Utils\/BBTextTextureUtility.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3085,
       "length": 2,
       "value": "10"
     },
@@ -12511,6 +12514,20 @@
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/AdsManager\/BBCampaignManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1494,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/AdsManager\/BBCampaignStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 35,
+      "value": "\"com.bbsdk.BBCampaignStorage.state\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/AdsManager\/BBCampaignStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 769,
       "length": 5,
       "value": "false"
     },
