@@ -76,6 +76,34 @@ extension BBSDK.BBEnvironment : Swift.CustomStringConvertible {
     get
   }
 }
+public class BBFeatureController {
+  public static let shared: BBSDK.BBFeatureController
+  public var featureOptions: BBSDK.BBFeatureOptions {
+    get
+    set
+  }
+  public init()
+  public func set(_ options: BBSDK.BBFeatureOptions)
+  public func enable(_ option: BBSDK.BBFeatureOptions)
+  public func disable(_ option: BBSDK.BBFeatureOptions)
+  public func reset()
+  public func toggle(_ option: BBSDK.BBFeatureOptions)
+  public func isEnabled(_ option: BBSDK.BBFeatureOptions) -> Swift.Bool
+  @objc deinit
+}
+public struct BBFeatureOptions : Swift.OptionSet, Swift.Sendable {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let featureAugmentation: BBSDK.BBFeatureOptions
+  public static let featurePlayer: BBSDK.BBFeatureOptions
+  public static let featureShot: BBSDK.BBFeatureOptions
+  public static let featureDunk: BBSDK.BBFeatureOptions
+  public static let none: BBSDK.BBFeatureOptions
+  public static let all: BBSDK.BBFeatureOptions
+  public typealias ArrayLiteralElement = BBSDK.BBFeatureOptions
+  public typealias Element = BBSDK.BBFeatureOptions
+  public typealias RawValue = Swift.UInt
+}
 public enum BBSide {
   case unspecified
   case left
@@ -134,6 +162,14 @@ public enum BBScalingMode : Swift.Int {
     get
   }
 }
+public protocol BBMediaSessionDataSource : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func mediaSessionCurrentDate(_ session: BBSDK.BBMediaSession) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func mediaSessionTimebase(_ session: BBSDK.BBMediaSession) -> CoreMedia.CMTimebase?
+  #endif
+}
 public protocol BBMediaSessionErrorDelegate : AnyObject {
   func mediaSessionDidError(_ sender: BBSDK.BBMediaSession, error: any Swift.Error)
   func mediaSessionDidFailOnError(_ sender: BBSDK.BBMediaSession, error: any Swift.Error)
@@ -165,6 +201,7 @@ public protocol BBMediaSessionControlling : AnyObject {
   var allowRendererMipMap: Swift.Bool { get set }
   var allowRendererAnisotropic: Swift.Bool { get set }
   var isDebug: Swift.Bool { get set }
+  var featureOptions: BBSDK.BBFeatureOptions { get set }
   var scalingMode: BBSDK.BBScalingMode { get set }
   func toggle(isEnabled: Swift.Bool)
   func begin()
@@ -180,10 +217,18 @@ public protocol BBMediaSessionControlling : AnyObject {
   func handleAdBreakStarted()
   func handleAdBreakEnd()
   func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+  func attachOutputs(_ handler: (AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
+  func detachOutputs(_ handler: (AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
 }
 final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
   #if compiler(>=5.3) && $NonescapableTypes
   final public var contentView: UIKit.UIView? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var dataSource: (any BBSDK.BBMediaSessionDataSource)? {
     get
     set
   }
@@ -194,10 +239,10 @@ final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
     set
   }
   #endif
-  @available(*, unavailable, message: "Use init(playerLayer:player:configuration:) instead.")
+  @available(*, unavailable, message: "Use init(configuration:additionalDetails:) instead.")
   public init()
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(playerLayer: QuartzCore.CALayer? = nil, player: AVFoundation.AVPlayer? = nil, configuration: BBSDK.BBSessionConfiguration, additionalDetails: [Swift.String : Swift.String]? = nil)
+  public init?(configuration: BBSDK.BBSessionConfiguration, additionalDetails: [Swift.String : Swift.String]? = nil)
   #endif
   final public var isAugmentationLayerEnabled: Swift.Bool {
     get
@@ -267,6 +312,10 @@ final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
     get
     set
   }
+  final public var featureOptions: BBSDK.BBFeatureOptions {
+    get
+    set
+  }
   final public func toggle(isEnabled: Swift.Bool)
   final public func begin()
   final public func end()
@@ -281,6 +330,8 @@ final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
   final public func handleAdBreakStarted()
   final public func handleAdBreakEnd()
   final public func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+  final public func attachOutputs(_ handler: (_ videoOutput: AVFoundation.AVPlayerItemVideoOutput, _ metadataOutput: AVFoundation.AVPlayerItemMetadataOutput, _ legibleOutput: AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
+  final public func detachOutputs(_ handler: (_ videoOutput: AVFoundation.AVPlayerItemVideoOutput, _ metadataOutput: AVFoundation.AVPlayerItemMetadataOutput, _ legibleOutput: AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
   @objc deinit
 }
 public struct BBGameInfo : Swift.Codable {

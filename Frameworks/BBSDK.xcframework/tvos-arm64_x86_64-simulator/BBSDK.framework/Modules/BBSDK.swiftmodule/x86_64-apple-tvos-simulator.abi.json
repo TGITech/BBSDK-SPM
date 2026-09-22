@@ -1353,6 +1353,345 @@
         "moduleName": "BBSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "BBFeatureController",
+        "printedName": "BBFeatureController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureController",
+                "printedName": "BBSDK.BBFeatureController",
+                "usr": "s:5BBSDK19BBFeatureControllerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK19BBFeatureControllerC6sharedACvpZ",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC6sharedACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureController",
+                    "printedName": "BBSDK.BBFeatureController",
+                    "usr": "s:5BBSDK19BBFeatureControllerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK19BBFeatureControllerC6sharedACvgZ",
+                "mangledName": "$s5BBSDK19BBFeatureControllerC6sharedACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureOptions",
+            "printedName": "featureOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0Vvp",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0Vvp",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0Vvg",
+                "mangledName": "$s5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0Vvg",
+                "moduleName": "BBSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0Vvs",
+                "mangledName": "$s5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0Vvs",
+                "moduleName": "BBSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0VvM",
+                "mangledName": "$s5BBSDK19BBFeatureControllerC14featureOptionsAA0bE0VvM",
+                "moduleName": "BBSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureController",
+                "printedName": "BBSDK.BBFeatureController",
+                "usr": "s:5BBSDK19BBFeatureControllerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BBSDK19BBFeatureControllerCACycfc",
+            "mangledName": "$s5BBSDK19BBFeatureControllerCACycfc",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK19BBFeatureControllerC3setyyAA0B7OptionsVF",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC3setyyAA0B7OptionsVF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enable",
+            "printedName": "enable(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK19BBFeatureControllerC6enableyyAA0B7OptionsVF",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC6enableyyAA0B7OptionsVF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK19BBFeatureControllerC7disableyyAA0B7OptionsVF",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC7disableyyAA0B7OptionsVF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK19BBFeatureControllerC5resetyyF",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC5resetyyF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggle",
+            "printedName": "toggle(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK19BBFeatureControllerC6toggleyyAA0B7OptionsVF",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC6toggleyyAA0B7OptionsVF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEnabled",
+            "printedName": "isEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK19BBFeatureControllerC9isEnabledySbAA0B7OptionsVF",
+            "mangledName": "$s5BBSDK19BBFeatureControllerC9isEnabledySbAA0B7OptionsVF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5BBSDK19BBFeatureControllerC",
+        "mangledName": "$s5BBSDK19BBFeatureControllerC",
+        "moduleName": "BBSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Metal",
         "printedName": "Metal",
@@ -1444,6 +1783,499 @@
         "moduleName": "BBSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "BBFeatureOptions",
+        "printedName": "BBFeatureOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV8rawValueSuvp",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV8rawValueSuvp",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV8rawValueSuvg",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV8rawValueSuvg",
+                "moduleName": "BBSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5BBSDK16BBFeatureOptionsV8rawValueACSu_tcfc",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV8rawValueACSu_tcfc",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "featureAugmentation",
+            "printedName": "featureAugmentation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV19featureAugmentationACvpZ",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV19featureAugmentationACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV19featureAugmentationACvgZ",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV19featureAugmentationACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featurePlayer",
+            "printedName": "featurePlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV13featurePlayerACvpZ",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV13featurePlayerACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV13featurePlayerACvgZ",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV13featurePlayerACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureShot",
+            "printedName": "featureShot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV11featureShotACvpZ",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV11featureShotACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV11featureShotACvgZ",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV11featureShotACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureDunk",
+            "printedName": "featureDunk",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV11featureDunkACvpZ",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV11featureDunkACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV11featureDunkACvgZ",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV11featureDunkACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV4noneACvpZ",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV4noneACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV4noneACvgZ",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV4noneACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "all",
+            "printedName": "all",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK16BBFeatureOptionsV3allACvpZ",
+            "mangledName": "$s5BBSDK16BBFeatureOptionsV3allACvpZ",
+            "moduleName": "BBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK16BBFeatureOptionsV3allACvgZ",
+                "mangledName": "$s5BBSDK16BBFeatureOptionsV3allACvgZ",
+                "moduleName": "BBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5BBSDK16BBFeatureOptionsV",
+        "mangledName": "$s5BBSDK16BBFeatureOptionsV",
+        "moduleName": "BBSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OptionSet",
+            "printedName": "OptionSet",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s9OptionSetP",
+            "mangledName": "$ss9OptionSetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SetAlgebra",
+            "printedName": "SetAlgebra",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s10SetAlgebraP",
+            "mangledName": "$ss10SetAlgebraP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1500,6 +2332,16 @@
         "printedName": "simd",
         "declKind": "Import",
         "moduleName": "BBSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BBSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3474,6 +4316,116 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BBMediaSessionDataSource",
+        "printedName": "BBMediaSessionDataSource",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "mediaSessionCurrentDate",
+            "printedName": "mediaSessionCurrentDate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBMediaSession",
+                "printedName": "BBSDK.BBMediaSession",
+                "usr": "s:5BBSDK14BBMediaSessionC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK24BBMediaSessionDataSourceP05mediaC11CurrentDatey10Foundation0H0VSgAA0bC0CF",
+            "mangledName": "$s5BBSDK24BBMediaSessionDataSourceP05mediaC11CurrentDatey10Foundation0H0VSgAA0bC0CF",
+            "moduleName": "BBSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionDataSource>",
+            "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mediaSessionTimebase",
+            "printedName": "mediaSessionTimebase(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMTimebase?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTimebase",
+                    "printedName": "CoreMedia.CMTimebase",
+                    "usr": "c:@T@CMTimebaseRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BBMediaSession",
+                "printedName": "BBSDK.BBMediaSession",
+                "usr": "s:5BBSDK14BBMediaSessionC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK24BBMediaSessionDataSourceP05mediaC8TimebaseySo13CMTimebaseRefaSgAA0bC0CF",
+            "mangledName": "$s5BBSDK24BBMediaSessionDataSourceP05mediaC8TimebaseySo13CMTimebaseRefaSgAA0bC0CF",
+            "moduleName": "BBSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionDataSource>",
+            "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5BBSDK24BBMediaSessionDataSourceP",
+        "mangledName": "$s5BBSDK24BBMediaSessionDataSourceP",
+        "moduleName": "BBSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BBMediaSessionErrorDelegate",
         "printedName": "BBMediaSessionErrorDelegate",
         "children": [
@@ -3870,6 +4822,9 @@
             "mangledName": "$s5BBSDK25BBMediaSessionControllingP11contentViewSo6UIViewCSgvp",
             "moduleName": "BBSDK",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3977,6 +4932,9 @@
             "mangledName": "$s5BBSDK25BBMediaSessionControllingP26isAugmentationLayerEnabledSbvp",
             "moduleName": "BBSDK",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -5463,6 +6421,100 @@
           },
           {
             "kind": "Var",
+            "name": "featureOptions",
+            "printedName": "featureOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0Vvp",
+            "mangledName": "$s5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0Vvp",
+            "moduleName": "BBSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0Vvg",
+                "mangledName": "$s5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0Vvg",
+                "moduleName": "BBSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionControlling>",
+                "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionControlling>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0Vvs",
+                "mangledName": "$s5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0Vvs",
+                "moduleName": "BBSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionControlling>",
+                "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionControlling>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0VvM",
+                "mangledName": "$s5BBSDK25BBMediaSessionControllingP14featureOptionsAA09BBFeatureF0VvM",
+                "moduleName": "BBSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionControlling>",
+                "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionControlling>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "scalingMode",
             "printedName": "scalingMode",
             "children": [
@@ -5869,6 +6921,134 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attachOutputs",
+            "printedName": "attachOutputs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemVideoOutput",
+                        "printedName": "AVFoundation.AVPlayerItemVideoOutput",
+                        "usr": "c:objc(cs)AVPlayerItemVideoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemMetadataOutput",
+                        "printedName": "AVFoundation.AVPlayerItemMetadataOutput",
+                        "usr": "c:objc(cs)AVPlayerItemMetadataOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemLegibleOutput",
+                        "printedName": "AVFoundation.AVPlayerItemLegibleOutput",
+                        "usr": "c:objc(cs)AVPlayerItemLegibleOutput"
+                      }
+                    ]
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK25BBMediaSessionControllingP13attachOutputsyyySo23AVPlayerItemVideoOutputC_So0gh8MetadataJ0CSo0gh7LegibleJ0CtXEF",
+            "mangledName": "$s5BBSDK25BBMediaSessionControllingP13attachOutputsyyySo23AVPlayerItemVideoOutputC_So0gh8MetadataJ0CSo0gh7LegibleJ0CtXEF",
+            "moduleName": "BBSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionControlling>",
+            "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionControlling>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detachOutputs",
+            "printedName": "detachOutputs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemVideoOutput",
+                        "printedName": "AVFoundation.AVPlayerItemVideoOutput",
+                        "usr": "c:objc(cs)AVPlayerItemVideoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemMetadataOutput",
+                        "printedName": "AVFoundation.AVPlayerItemMetadataOutput",
+                        "usr": "c:objc(cs)AVPlayerItemMetadataOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemLegibleOutput",
+                        "printedName": "AVFoundation.AVPlayerItemLegibleOutput",
+                        "usr": "c:objc(cs)AVPlayerItemLegibleOutput"
+                      }
+                    ]
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK25BBMediaSessionControllingP13detachOutputsyyySo23AVPlayerItemVideoOutputC_So0gh8MetadataJ0CSo0gh7LegibleJ0CtXEF",
+            "mangledName": "$s5BBSDK25BBMediaSessionControllingP13detachOutputsyyySo23AVPlayerItemVideoOutputC_So0gh8MetadataJ0CSo0gh7LegibleJ0CtXEF",
+            "moduleName": "BBSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BBSDK.BBMediaSessionControlling>",
+            "sugared_genericSig": "<Self where Self : BBSDK.BBMediaSessionControlling>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -6019,6 +7199,121 @@
           },
           {
             "kind": "Var",
+            "name": "dataSource",
+            "printedName": "dataSource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any BBSDK.BBMediaSessionDataSource)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBMediaSessionDataSource",
+                    "printedName": "any BBSDK.BBMediaSessionDataSource",
+                    "usr": "s:5BBSDK24BBMediaSessionDataSourceP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvp",
+            "mangledName": "$s5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvp",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BBSDK.BBMediaSessionDataSource)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BBMediaSessionDataSource",
+                        "printedName": "any BBSDK.BBMediaSessionDataSource",
+                        "usr": "s:5BBSDK24BBMediaSessionDataSourceP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvg",
+                "mangledName": "$s5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvg",
+                "moduleName": "BBSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BBSDK.BBMediaSessionDataSource)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BBMediaSessionDataSource",
+                        "printedName": "any BBSDK.BBMediaSessionDataSource",
+                        "usr": "s:5BBSDK24BBMediaSessionDataSourceP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvs",
+                "mangledName": "$s5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvs",
+                "moduleName": "BBSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvM",
+                "mangledName": "$s5BBSDK14BBMediaSessionC10dataSourceAA0bc4DataE0_pSgvM",
+                "moduleName": "BBSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -6135,7 +7430,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(playerLayer:player:configuration:additionalDetails:)",
+            "printedName": "init(configuration:additionalDetails:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6149,36 +7444,6 @@
                     "usr": "s:5BBSDK14BBMediaSessionC"
                   }
                 ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "QuartzCore.CALayer?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CALayer",
-                    "printedName": "QuartzCore.CALayer",
-                    "usr": "c:objc(cs)CALayer"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AVFoundation.AVPlayer?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AVPlayer",
-                    "printedName": "AVFoundation.AVPlayer",
-                    "usr": "c:objc(cs)AVPlayer"
-                  }
-                ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -6218,8 +7483,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5BBSDK14BBMediaSessionC11playerLayer0D013configuration17additionalDetailsACSgSo7CALayerCSg_So8AVPlayerCSgAA22BBSessionConfigurationCSDyS2SGSgtcfc",
-            "mangledName": "$s5BBSDK14BBMediaSessionC11playerLayer0D013configuration17additionalDetailsACSgSo7CALayerCSg_So8AVPlayerCSgAA22BBSessionConfigurationCSDyS2SGSgtcfc",
+            "usr": "s:5BBSDK14BBMediaSessionC13configuration17additionalDetailsACSgAA22BBSessionConfigurationC_SDyS2SGSgtcfc",
+            "mangledName": "$s5BBSDK14BBMediaSessionC13configuration17additionalDetailsACSgAA22BBSessionConfigurationC_SDyS2SGSgtcfc",
             "moduleName": "BBSDK",
             "declAttributes": [
               "AccessControl",
@@ -7790,6 +9055,97 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "featureOptions",
+            "printedName": "featureOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BBFeatureOptions",
+                "printedName": "BBSDK.BBFeatureOptions",
+                "usr": "s:5BBSDK16BBFeatureOptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0Vvp",
+            "mangledName": "$s5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0Vvp",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0Vvg",
+                "mangledName": "$s5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0Vvg",
+                "moduleName": "BBSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BBFeatureOptions",
+                    "printedName": "BBSDK.BBFeatureOptions",
+                    "usr": "s:5BBSDK16BBFeatureOptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0Vvs",
+                "mangledName": "$s5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0Vvs",
+                "moduleName": "BBSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0VvM",
+                "mangledName": "$s5BBSDK14BBMediaSessionC14featureOptionsAA09BBFeatureE0VvM",
+                "moduleName": "BBSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "toggle",
             "printedName": "toggle(isEnabled:)",
@@ -8092,6 +9448,129 @@
             "declKind": "Func",
             "usr": "s:5BBSDK14BBMediaSessionC26handleExternalTapGestureAtyySo7CGPointVF",
             "mangledName": "$s5BBSDK14BBMediaSessionC26handleExternalTapGestureAtyySo7CGPointVF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attachOutputs",
+            "printedName": "attachOutputs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemVideoOutput",
+                        "printedName": "AVFoundation.AVPlayerItemVideoOutput",
+                        "usr": "c:objc(cs)AVPlayerItemVideoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemMetadataOutput",
+                        "printedName": "AVFoundation.AVPlayerItemMetadataOutput",
+                        "usr": "c:objc(cs)AVPlayerItemMetadataOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemLegibleOutput",
+                        "printedName": "AVFoundation.AVPlayerItemLegibleOutput",
+                        "usr": "c:objc(cs)AVPlayerItemLegibleOutput"
+                      }
+                    ]
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK14BBMediaSessionC13attachOutputsyyySo23AVPlayerItemVideoOutputC_So0fg8MetadataI0CSo0fg7LegibleI0CtXEF",
+            "mangledName": "$s5BBSDK14BBMediaSessionC13attachOutputsyyySo23AVPlayerItemVideoOutputC_So0fg8MetadataI0CSo0fg7LegibleI0CtXEF",
+            "moduleName": "BBSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detachOutputs",
+            "printedName": "detachOutputs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemVideoOutput",
+                        "printedName": "AVFoundation.AVPlayerItemVideoOutput",
+                        "usr": "c:objc(cs)AVPlayerItemVideoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemMetadataOutput",
+                        "printedName": "AVFoundation.AVPlayerItemMetadataOutput",
+                        "usr": "c:objc(cs)AVPlayerItemMetadataOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerItemLegibleOutput",
+                        "printedName": "AVFoundation.AVPlayerItemLegibleOutput",
+                        "usr": "c:objc(cs)AVPlayerItemLegibleOutput"
+                      }
+                    ]
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5BBSDK14BBMediaSessionC13detachOutputsyyySo23AVPlayerItemVideoOutputC_So0fg8MetadataI0CSo0fg7LegibleI0CtXEF",
+            "mangledName": "$s5BBSDK14BBMediaSessionC13detachOutputsyyySo23AVPlayerItemVideoOutputC_So0fg8MetadataI0CSo0fg7LegibleI0CtXEF",
             "moduleName": "BBSDK",
             "declAttributes": [
               "Final",
@@ -9313,92 +10792,106 @@
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1911,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 1721,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1826,
+      "offset": 1920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "Array",
-      "offset": 2105,
+      "offset": 2258,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "Array",
-      "offset": 2326,
+      "offset": 2479,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 3056,
-      "length": 47,
-      "value": "\"com.bbsdk.metadataworker.isLoadedEnough.queue\""
-    },
-    {
-      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3215,
-      "length": 5,
-      "value": "false"
+      "offset": 3455,
+      "length": 41,
+      "value": "\"com.bbsdk.metadataworker.timecode.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 3915,
+      "offset": 3566,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "StringLiteral",
+      "offset": 4543,
+      "length": 42,
+      "value": "\"com.bbsdk.metadataworker.scheduler.queue\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "Array",
+      "offset": 4779,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4974,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 3969,
+      "offset": 5159,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 4394,
+      "offset": 5585,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 4464,
+      "offset": 5655,
       "length": 47,
       "value": "\"com.bbsdk.metadataworker.resourceLoader.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 4688,
+      "offset": 5879,
       "length": 47,
       "value": "\"com.bbsdk.metadataworker.periodicUpdate.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 11672,
+      "offset": 12969,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/MetadataManager\/BBMetadataWorker.swift",
       "kind": "StringLiteral",
-      "offset": 25477,
+      "offset": 30181,
       "length": 5,
       "value": "\"mp4\""
     },
@@ -9573,112 +11066,119 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5425,
+      "offset": 6128,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5364,
+      "offset": 6067,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6143,
+      "offset": 6846,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6683,
+      "offset": 7386,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6735,
+      "offset": 7438,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6787,
+      "offset": 7490,
       "length": 3,
       "value": "240"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6840,
+      "offset": 7543,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6921,
+      "offset": 7624,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6973,
+      "offset": 7676,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7025,
+      "offset": 7728,
       "length": 3,
       "value": "420"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7078,
+      "offset": 7781,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasView.swift",
       "kind": "Array",
-      "offset": 16878,
+      "offset": 18259,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1200,
+      "offset": 1431,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 2696,
+      "offset": 2927,
       "length": 34,
       "value": "\"BBCanvasRenderer.adTexture.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 4272,
+      "length": 40,
+      "value": "\"BBCanvasRenderer.campaignManager.queue\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3833,
+      "offset": 5447,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3847,
+      "offset": 5461,
       "length": 3,
       "value": "720"
     },
@@ -10152,6 +11652,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureController.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 22,
+      "value": "\"bbsdk.featureOptions\""
+    },
+    {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererDoubleBufferedTexture.swift",
       "kind": "Array",
       "offset": 365,
@@ -10206,6 +11713,69 @@
       "offset": 1302,
       "length": 23,
       "value": "\"com.adanalytics.timer\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 322,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 327,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 466,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 471,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 537,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 542,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Public\/BBFeatureOptions.swift",
+      "kind": "Array",
+      "offset": 593,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/Events\/AdSegmentation\/BBAdEventCache.swift",
@@ -10343,170 +11913,177 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 892,
+      "offset": 917,
       "length": 14,
       "value": "\"placeholders\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 1314,
+      "offset": 1348,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 1324,
+      "offset": 1358,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 1407,
+      "offset": 1441,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 1444,
+      "offset": 1478,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "FloatLiteral",
-      "offset": 1505,
+      "offset": 1539,
       "length": 5,
       "value": "29.97"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 1520,
+      "offset": 1554,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "BooleanLiteral",
-      "offset": 1537,
+      "offset": 1571,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 1551,
+      "offset": 1585,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "BooleanLiteral",
-      "offset": 1608,
+      "offset": 1642,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "Array",
-      "offset": 4265,
+      "offset": 4621,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 4469,
+      "offset": 4838,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "IntegerLiteral",
-      "offset": 4476,
+      "offset": 4845,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 4497,
+      "offset": 4866,
       "length": 6,
       "value": "\"Test\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "Array",
-      "offset": 4525,
+      "offset": 4894,
       "length": 19,
       "value": "[0, 0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "Array",
-      "offset": 4570,
+      "offset": 4967,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6722,
+      "offset": 7246,
       "length": 5,
       "value": "\"FPS\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6750,
+      "offset": 7274,
       "length": 8,
       "value": "\"Height\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6785,
+      "offset": 7309,
       "length": 12,
       "value": "\"Interlaced\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 6819,
+      "offset": 7343,
       "length": 7,
       "value": "\"Width\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 8750,
+      "offset": 9274,
       "length": 9,
       "value": "\"shot3pt\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 9919,
+      "offset": 10443,
       "length": 6,
       "value": "\"locs\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 9946,
+      "offset": 10470,
       "length": 8,
       "value": "\"player\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 11678,
+      "offset": 12202,
       "length": 10,
       "value": "\"tranform\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/BBMetadataPackage.swift",
+      "kind": "Dictionary",
+      "offset": 600,
+      "length": 38,
+      "value": "[(\"FullMaskMp4\", [\"2.0\"])]"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/AugmentationService\/BBAugmentationMetadataDownloadOperation.swift",
@@ -10588,455 +12165,462 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3260,
+      "offset": 3323,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3348,
+      "offset": 3411,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3682,
+      "offset": 3745,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4243,
+      "offset": 4306,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 5368,
+      "offset": 4667,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5429,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6105,
+      "offset": 6166,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6432,
+      "offset": 6493,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6658,
+      "offset": 6719,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7009,
+      "offset": 7070,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7358,
+      "offset": 7419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7686,
+      "offset": 7747,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8020,
+      "offset": 8081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8258,
+      "offset": 8319,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8489,
+      "offset": 8550,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8711,
+      "offset": 8772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8934,
+      "offset": 8995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9159,
+      "offset": 9220,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9385,
+      "offset": 9446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9622,
+      "offset": 9683,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9879,
+      "offset": 9940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10144,
+      "offset": 10205,
       "length": 30,
       "value": "\"Allow Render Closed Captions\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10096,
+      "offset": 10157,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10500,
+      "offset": 10867,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 11533,
+      "offset": 11915,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 11596,
+      "offset": 11978,
       "length": 33,
       "value": "\"com.bb.mediasession.videoOutput\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 11713,
+      "offset": 12095,
       "length": 36,
       "value": "\"com.bb.mediasession.metadataOutput\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 11832,
+      "offset": 12214,
       "length": 35,
       "value": "\"com.bb.mediasession.legibleOutput\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12075,
+      "offset": 12457,
       "length": 17,
       "value": "\"didChangeOffset\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12107,
+      "offset": 12489,
       "length": 8,
       "value": "\"offset\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 12174,
+      "offset": 12556,
       "length": 13,
       "value": "\"last_offset\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 12030,
+      "offset": 12412,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 13193,
+      "offset": 13575,
       "length": 33,
       "value": "\"BBMediaSession.adFileName.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 14436,
+      "offset": 14818,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 14502,
+      "offset": 14884,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 16000,
+      "offset": 16382,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 16209,
+      "offset": 16591,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 16401,
+      "offset": 16783,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 16835,
+      "offset": 17217,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 17037,
+      "offset": 17419,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 17221,
+      "offset": 17603,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 17528,
+      "offset": 17910,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 18387,
+      "offset": 18769,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 18511,
+      "offset": 18893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18595,
+      "offset": 18977,
       "length": 11,
       "value": "\"com.bbsdk\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 18618,
+      "offset": 19000,
       "length": 16,
       "value": "\"BBMediaSession\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 18783,
+      "offset": 19165,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 19159,
+      "offset": 19541,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 20208,
+      "offset": 20590,
       "length": 46,
       "value": "\"BBMediaSession.currentPlayheadTimecode.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 20867,
+      "offset": 21249,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 22189,
+      "offset": 22571,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 22297,
+      "offset": 22679,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 43247,
+      "offset": 44338,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 43295,
+      "offset": 44386,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 43333,
+      "offset": 44424,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 43377,
+      "offset": 44468,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 43423,
+      "offset": 44514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 43474,
+      "offset": 44565,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 47514,
+      "offset": 48605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "StringLiteral",
-      "offset": 47574,
+      "offset": 48665,
       "length": 27,
       "value": "\"bbmediakit.mediaDataQueue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 47731,
+      "offset": 48822,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 57869,
+      "offset": 59068,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 59452,
+      "offset": 60651,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 59707,
+      "offset": 60906,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 68364,
+      "offset": 69563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/_BBMediaSessionImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 68889,
+      "offset": 70088,
       "length": 1,
       "value": "0"
     },
@@ -12730,322 +14314,322 @@
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1557,
+      "offset": 1713,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1716,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1563,
+      "offset": 1719,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1566,
+      "offset": 1722,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1594,
+      "offset": 1750,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1597,
+      "offset": 1753,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1600,
+      "offset": 1756,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1603,
+      "offset": 1759,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1631,
+      "offset": 1787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1634,
+      "offset": 1790,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1637,
+      "offset": 1793,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1640,
+      "offset": 1796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1668,
+      "offset": 1824,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1671,
+      "offset": 1827,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1674,
+      "offset": 1830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1677,
+      "offset": 1833,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1764,
+      "offset": 1920,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1767,
+      "offset": 1923,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1770,
+      "offset": 1926,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1773,
+      "offset": 1929,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1801,
+      "offset": 1957,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1804,
+      "offset": 1960,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1808,
+      "offset": 1964,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1811,
+      "offset": 1967,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1839,
+      "offset": 1995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1842,
+      "offset": 1998,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1845,
+      "offset": 2001,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1848,
+      "offset": 2004,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1876,
+      "offset": 2032,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1879,
+      "offset": 2035,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1882,
+      "offset": 2038,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1885,
+      "offset": 2041,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1953,
+      "offset": 2109,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1993,
+      "offset": 2149,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2199,
+      "offset": 2355,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2212,
+      "offset": 2368,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2231,
+      "offset": 2387,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2331,
+      "offset": 2487,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2344,
+      "offset": 2500,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2363,
+      "offset": 2519,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2451,
+      "offset": 2607,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2464,
+      "offset": 2620,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2483,
+      "offset": 2639,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2585,
+      "offset": 2741,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2598,
+      "offset": 2754,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentRenderController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2617,
+      "offset": 2773,
       "length": 1,
       "value": "3"
     },
@@ -13860,6 +15444,13 @@
       "offset": 645,
       "length": 14,
       "value": "\"MappingPoint\""
+    },
+    {
+      "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Private\/CanvasView\/BBCanvasRenderer\/BBCanvasRendererComponents\/BBCanvasRendererComponentAdTextureController.swift",
+      "kind": "StringLiteral",
+      "offset": 720,
+      "length": 71,
+      "value": "\"BBCanvasRenderer.Components.AdTextureController.campaignManager.queue\""
     },
     {
       "filePath": "\/Users\/vladimirkovtun\/work\/DTC_iOS\/BBMediaKit-Framework\/BBSDK\/Legacy\/BBTimecodeUtility.swift",
