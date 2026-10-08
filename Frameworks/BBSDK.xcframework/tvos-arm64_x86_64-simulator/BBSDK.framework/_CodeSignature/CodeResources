@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		S5WYIHukWWVEOsFvK9yMlD5hndc=
+		A2HhGD9V40kxqf6NjBwzL+M3H0s=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		+HJ2XUYdUTr6EiODZN8pDiyZ2bM=
+		Bl0KVkY/1d25MtmqlObdAPFrK48=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		8l3or84eN2z+qMYO+H7utw1s+cU=
+		S7e+1hzbgbJb6BoAs6gIiX8g7Gg=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		DanueahOnPDhkKWclFTWUJQguuw=
+		e6j5Yec3a8uUKcBrdsTsvbmbftI=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		8l3or84eN2z+qMYO+H7utw1s+cU=
+		S7e+1hzbgbJb6BoAs6gIiX8g7Gg=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		8PdzUP38In53QJmf0eywYxQelPQ=
+		71cNEo9bKj5cv9YVbPgUZQKfSWM=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		+HJ2XUYdUTr6EiODZN8pDiyZ2bM=
+		Bl0KVkY/1d25MtmqlObdAPFrK48=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		OjXzlhxmV+G4wflwYEfkewR7vI4=
+		6jhVKMmIR2ZeErYRIEKJB4vak2U=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		+nmirSYEclcqHjJTgswPQhMUrhI=
+		HJC293wIMKekD5SQI01c4QiORTM=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		OjXzlhxmV+G4wflwYEfkewR7vI4=
+		6jhVKMmIR2ZeErYRIEKJB4vak2U=
 		</data>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		r8aypqfBV7K2Mmrw4aTHriYY0YY=
+		LsjotohlpehXI1WZQwX8gAnnSRQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -870,7 +870,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		G7QVAqrM7NosO2dCm6Zzqj+DmPQ=
+		rJLICMffnXkl2wfW/CbiTDCLXQo=
 		</data>
 		<key>demo.alpha</key>
 		<data>
@@ -906,70 +906,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU3vv1qv8JUz4phQ+SuCjD2kta3P4Wd8Fh7F+beST4g=
+			ABWE02SK9dI9Xmv6v4Z7RpwAjZ682TXrCP07Pah5DuU=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			98tfmjEqjYy1CHn+OW2p3FenAAf2GE+wWd44J8JWxos=
+			5CTQ/L+8l2TtrGeI7aMktjAdV+mJgKFho+XMWTRYzv0=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jDRmFI1uSrAdEVHHTWIDQitsIQyl9iQvPxFoIHlw784=
+			Bv4JPBNpMjwYHL0YMbBDf/7n4XQzTrrCyKiUXJ56YOI=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			98tfmjEqjYy1CHn+OW2p3FenAAf2GE+wWd44J8JWxos=
+			5CTQ/L+8l2TtrGeI7aMktjAdV+mJgKFho+XMWTRYzv0=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bHqr9X/JiDOi7YxAJmvVDK7+bsuKUd/oauSMrb9NJ9o=
+			Y+8aJEVAbLcBfCxigwslrEIcaRC0JoJ5ZY4+KI+Kuto=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU3vv1qv8JUz4phQ+SuCjD2kta3P4Wd8Fh7F+beST4g=
+			ABWE02SK9dI9Xmv6v4Z7RpwAjZ682TXrCP07Pah5DuU=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OT+Zd42vRLSa+yDg1/EUydiX8/0NtF3ziH6kxlFjcU4=
+			65kNqcthx4PCyeyhXDcSAQzKu77RIrd2Se1E3ZbnzWo=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NvkYarj6P9EMycQeBN0IIfeZaSALTJz9XH1jS+fEB3U=
+			1Fnso7TJRarLC4g8AemeEl7ri2k4DhMO7C4bWFM6HU0=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OT+Zd42vRLSa+yDg1/EUydiX8/0NtF3ziH6kxlFjcU4=
+			65kNqcthx4PCyeyhXDcSAQzKu77RIrd2Se1E3ZbnzWo=
 			</data>
 		</dict>
 		<key>Modules/BBSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6jFwRQmJ8PZRIfReg6S/R+Vv3PMsqF5nAiA2n0SRblU=
+			Mme6QW/luFVC6qJEDpujuebOswpxjJ5cj3lN24H/orA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2404,7 +2404,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4a+PzKzVf3/+SCFxbD60Pqy+xhH6Bj39tkHUX6BQNVc=
+			76z9tygccpwt3G1og5Cal8lj7dmlrbTKWAilJwLpTGM=
 			</data>
 		</dict>
 		<key>demo.alpha</key>

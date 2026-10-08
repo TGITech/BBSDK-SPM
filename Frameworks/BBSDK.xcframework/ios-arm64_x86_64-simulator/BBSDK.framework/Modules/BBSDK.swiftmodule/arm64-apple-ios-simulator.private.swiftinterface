@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BBSDK
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BBSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AVKit
@@ -96,14 +96,22 @@ public struct BBFeatureOptions : Swift.OptionSet, Swift.Sendable {
   public let rawValue: Swift.UInt
   public init(rawValue: Swift.UInt)
   public static let featureAugmentation: BBSDK.BBFeatureOptions
-  public static let featurePlayer: BBSDK.BBFeatureOptions
+  public static let featureBallTracking: BBSDK.BBFeatureOptions
+  public static let featureSelectPlayer: BBSDK.BBFeatureOptions
+  public static let featurePossessionPlayer: BBSDK.BBFeatureOptions
   public static let featureShot: BBSDK.BBFeatureOptions
   public static let featureDunk: BBSDK.BBFeatureOptions
-  public static let none: BBSDK.BBFeatureOptions
   public static let all: BBSDK.BBFeatureOptions
+  public static let none: BBSDK.BBFeatureOptions
   public typealias ArrayLiteralElement = BBSDK.BBFeatureOptions
   public typealias Element = BBSDK.BBFeatureOptions
   public typealias RawValue = Swift.UInt
+}
+public struct BBPlayer : Swift.Equatable, Swift.CustomStringConvertible {
+  public static func == (lhs: BBSDK.BBPlayer, rhs: BBSDK.BBPlayer) -> Swift.Bool
+  public var description: Swift.String {
+    get
+  }
 }
 public enum BBSide {
   case unspecified
@@ -182,6 +190,13 @@ public protocol BBMediaSessionDelegate : BBSDK.BBMediaSessionErrorDelegate {
   func mediaSessionDidRegisterShot(_ sender: BBSDK.BBMediaSession, adID: Swift.String, logoID: Swift.String, adURL: Swift.String, averagePercenOfScreen: CoreFoundation.CGFloat, averagePercenOfAd: CoreFoundation.CGFloat, duration: CoreMedia.CMTime)
   func mediaSessionDidRegisterTap(_ sender: BBSDK.BBMediaSession, adID: Swift.String, redirectURL: Foundation.URL)
 }
+public protocol BBMediaSessionChangeDelegate : AnyObject {
+  func mediaSession(_ sender: BBSDK.BBMediaSession, didChangeBallPosition position: CoreFoundation.CGPoint)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func mediaSession(_ sender: BBSDK.BBMediaSession, didChangePlayers players: [BBSDK.BBPlayer]?)
+  #endif
+  func mediaSession(_ sender: BBSDK.BBMediaSession, didChangePossessionPlayer player: BBSDK.BBPlayer)
+}
 public protocol BBMediaSessionControlling : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   var contentView: UIKit.UIView? { get set }
@@ -240,10 +255,16 @@ final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
     set
   }
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var changeDelegate: (any BBSDK.BBMediaSessionChangeDelegate)? {
+    get
+    set
+  }
+  #endif
   @available(*, unavailable, message: "Use init(configuration:additionalDetails:) instead.")
   public init()
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(configuration: BBSDK.BBSessionConfiguration, additionalDetails: [Swift.String : Swift.String]? = nil)
+  public init(configuration: BBSDK.BBSessionConfiguration, additionalDetails: [Swift.String : Swift.String]? = nil)
   #endif
   final public var isAugmentationLayerEnabled: Swift.Bool {
     get
@@ -331,9 +352,19 @@ final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
   final public func handleAdBreakStarted()
   final public func handleAdBreakEnd()
   final public func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+  @objc deinit
+}
+extension BBSDK.BBMediaSession {
   final public func attachOutputs(_ handler: (_ videoOutput: AVFoundation.AVPlayerItemVideoOutput, _ metadataOutput: AVFoundation.AVPlayerItemMetadataOutput, _ legibleOutput: AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
   final public func detachOutputs(_ handler: (_ videoOutput: AVFoundation.AVPlayerItemVideoOutput, _ metadataOutput: AVFoundation.AVPlayerItemMetadataOutput, _ legibleOutput: AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
-  @objc deinit
+}
+extension BBSDK.BBMediaSession {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var selectedPlayerIdentifier: Swift.String? {
+    get
+    set
+  }
+  #endif
 }
 public struct BBGameInfo : Swift.Codable {
   public let bucketName: Swift.String
