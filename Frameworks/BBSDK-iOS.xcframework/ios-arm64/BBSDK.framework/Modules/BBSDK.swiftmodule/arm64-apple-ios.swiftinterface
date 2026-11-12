@@ -1,0 +1,613 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BBSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import AVKit
+import Accelerate
+import AudioToolbox
+@_exported import BBSDK
+import CoreGraphics
+import CoreImage
+import CoreMedia
+import CoreText
+import CoreVideo
+import Foundation
+import ImageIO
+import MachO
+import Metal
+import MetalKit
+import QuartzCore
+import Security
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import VideoToolbox
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+import simd
+public enum BBVideoResolution : Swift.String, Swift.Hashable, Swift.Codable, Swift.Sendable {
+  case auto
+  case p224
+  case p360
+  case p540
+  case p720
+  case p1080
+  public var title: Swift.String {
+    get
+  }
+  public var size: CoreFoundation.CGSize {
+    get
+  }
+  public var bitrate: Swift.UInt {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BBEnvironment : Swift.String, Swift.Hashable, Swift.Codable, Swift.CaseIterable, Swift.Sendable {
+  case prod
+  case dev
+  public var title: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [BBSDK.BBEnvironment]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [BBSDK.BBEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension BBSDK.BBEnvironment : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@available(*, deprecated, message: "Set BBMediaSession.featureOptions on each session; no session reads BBFeatureController.")
+public class BBFeatureController {
+  public static let shared: BBSDK.BBFeatureController
+  public var featureOptions: BBSDK.BBFeatureOptions {
+    get
+    set
+  }
+  public init()
+  public func set(_ options: BBSDK.BBFeatureOptions)
+  public func enable(_ option: BBSDK.BBFeatureOptions)
+  public func disable(_ option: BBSDK.BBFeatureOptions)
+  public func reset()
+  public func toggle(_ option: BBSDK.BBFeatureOptions)
+  public func isEnabled(_ option: BBSDK.BBFeatureOptions) -> Swift.Bool
+  @objc deinit
+}
+public struct BBFeatureOptions : Swift.OptionSet, Swift.Hashable, Swift.Sendable, Swift.CustomStringConvertible {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let featureAugmentation: BBSDK.BBFeatureOptions
+  public static let featureBallTracking: BBSDK.BBFeatureOptions
+  public static let featureSelectPlayer: BBSDK.BBFeatureOptions
+  public static let featurePossessionPlayer: BBSDK.BBFeatureOptions
+  public static let featureShot: BBSDK.BBFeatureOptions
+  public static let featureDunk: BBSDK.BBFeatureOptions
+  public static let all: BBSDK.BBFeatureOptions
+  public static let none: BBSDK.BBFeatureOptions
+  public var description: Swift.String {
+    get
+  }
+  public typealias ArrayLiteralElement = BBSDK.BBFeatureOptions
+  public typealias Element = BBSDK.BBFeatureOptions
+  public typealias RawValue = Swift.UInt
+}
+public struct BBPlayer : Swift.Hashable, Swift.Sendable, Swift.CustomStringConvertible {
+  public let identifier: Swift.String
+  public let shortName: Swift.String
+  public let teamIdentifier: Swift.String
+  public let jerseyNumber: Swift.String?
+  public var displayName: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(identifier: Swift.String, teamIdentifier: Swift.String, displayName: Swift.String, jerseyNumber: Swift.String? = nil)
+  #endif
+  public static func == (lhs: BBSDK.BBPlayer, rhs: BBSDK.BBPlayer) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var description: Swift.String {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BBOverlaySlot : Swift.Hashable, Swift.Sendable {
+  case floorRing
+  case nameTag
+  case possessionTag
+  case ballMarker
+  case shotTooltip
+  case dunkTooltip
+  public static func == (a: BBSDK.BBOverlaySlot, b: BBSDK.BBOverlaySlot) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BBArtwork : Swift.Equatable, Swift.Sendable {
+  case builtIn
+  case none
+  case svg(Swift.String)
+  public static func == (a: BBSDK.BBArtwork, b: BBSDK.BBArtwork) -> Swift.Bool
+}
+public struct BBDepthScale : Swift.Equatable, Swift.Sendable {
+  public var far: CoreFoundation.CGFloat
+  public var near: CoreFoundation.CGFloat
+  public init(far: CoreFoundation.CGFloat, near: CoreFoundation.CGFloat)
+  public static func == (a: BBSDK.BBDepthScale, b: BBSDK.BBDepthScale) -> Swift.Bool
+}
+public struct BBSlotLayout : Swift.Equatable, Swift.Sendable {
+  public var scale: CoreFoundation.CGFloat
+  public var lift: CoreFoundation.CGFloat?
+  public var anchor: CoreFoundation.CGPoint?
+  public var depthScale: BBSDK.BBDepthScale?
+  public var bounce: CoreFoundation.CGFloat
+  public var tilt: CoreFoundation.CGFloat
+  public var isOccluded: Swift.Bool?
+  public var zIndex: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(scale: CoreFoundation.CGFloat = 1, lift: CoreFoundation.CGFloat? = nil, anchor: CoreFoundation.CGPoint? = nil, depthScale: BBSDK.BBDepthScale? = nil, bounce: CoreFoundation.CGFloat = 0, tilt: CoreFoundation.CGFloat = 0, isOccluded: Swift.Bool? = nil, zIndex: Swift.Int? = nil)
+  #endif
+  public static func == (a: BBSDK.BBSlotLayout, b: BBSDK.BBSlotLayout) -> Swift.Bool
+}
+public struct BBKeyframe : Swift.Equatable, Swift.Sendable {
+  public var at: Swift.Double
+  public var value: Swift.Double
+  public var easing: [Swift.Double]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(at: Swift.Double, value: Swift.Double, easing: [Swift.Double]? = nil)
+  #endif
+  public static func == (a: BBSDK.BBKeyframe, b: BBSDK.BBKeyframe) -> Swift.Bool
+}
+public enum BBSelectionMode : Swift.Equatable, Swift.Sendable {
+  case none
+  case single
+  case multiple
+  public static func == (a: BBSDK.BBSelectionMode, b: BBSDK.BBSelectionMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct BBOverlaySpec : Swift.Equatable, Swift.Sendable {
+  public var features: BBSDK.BBFeatureOptions
+  public var render: BBSDK.BBFeatureOptions?
+  public var artwork: [BBSDK.BBOverlaySlot : BBSDK.BBArtwork]
+  public var layout: [BBSDK.BBOverlaySlot : BBSDK.BBSlotLayout]
+  public var themeValues: [Swift.String : Swift.String]
+  public var playerValues: [Swift.String : [Swift.String : Swift.String]]
+  public var selectionMode: BBSDK.BBSelectionMode
+  public var selection: Swift.Set<Swift.String>
+  public var selectionPalette: [Swift.String]
+  public var timeline: [Swift.String : [BBSDK.BBKeyframe]]
+  public var cues: [Swift.String : [Swift.String : [BBSDK.BBKeyframe]]]
+  public var assets: [Swift.String : Swift.String]
+  public static let contractVersion: Swift.String
+  public static func == (lhs: BBSDK.BBOverlaySpec, rhs: BBSDK.BBOverlaySpec) -> Swift.Bool
+}
+extension BBSDK.BBOverlaySpec {
+  public init(json: Foundation.Data) throws
+  public func jsonData() throws -> Foundation.Data
+}
+public enum BBOverlayIssue : Swift.Equatable, Swift.Sendable, Swift.CustomStringConvertible {
+  case limitExceeded(Swift.String)
+  case unknownFeature(Swift.String)
+  case unknownSlot(Swift.String)
+  case invalidArtwork(slot: BBSDK.BBOverlaySlot, reason: Swift.String)
+  case unresolvedPlaceholder(slot: BBSDK.BBOverlaySlot, key: Swift.String)
+  case selectionLimitReached(playerIdentifier: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: BBSDK.BBOverlayIssue, b: BBSDK.BBOverlayIssue) -> Swift.Bool
+}
+public enum BBSVG {
+  public static func validate(_ source: Swift.String, slot: BBSDK.BBOverlaySlot) -> [BBSDK.BBOverlayIssue]
+}
+public struct BBOverlayApplyResult : Swift.Sendable {
+  public let revision: Swift.UInt64
+  public let issues: [BBSDK.BBOverlayIssue]
+}
+public enum BBSide {
+  case unspecified
+  case left
+  case right
+  public static func == (a: BBSDK.BBSide, b: BBSDK.BBSide) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BBFpsOption : Swift.Sendable {
+  case fps5994
+  case fps2997
+  public var value: Swift.Double {
+    get
+  }
+  public static func == (a: BBSDK.BBFpsOption, b: BBSDK.BBFpsOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct BBSessionConfiguration : Swift.Sendable {
+  public let mediaID: Swift.String
+  public let fps: BBSDK.BBFpsOption
+  public let isMP4: Swift.Bool
+  public let environment: BBSDK.BBEnvironment
+  public let trackingSource: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(mediaID: Swift.String, fps: BBSDK.BBFpsOption, isMP4: Swift.Bool, environment: BBSDK.BBEnvironment, trackingSource: Swift.String? = nil) throws(BBSDK.BBError)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(mediaID: Swift.String? = nil, streamURL: Swift.String? = nil, fps: BBSDK.BBFpsOption, timecodesFolder: Swift.String = "", offsetList: [BBSDK.BBOffset] = [], isMP4: Swift.Bool = true, jsonID: Swift.String? = nil, videoResolution: BBSDK.BBVideoResolution? = nil, environment: BBSDK.BBEnvironment) throws(BBSDK.BBError)
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class BBSecurityProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func handleAccessToken(token: Swift.String, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getCloudfrontCookies(gameId: Swift.String, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public enum BBVersion {
+  public static let value: Swift.String
+}
+extension BBSDK.BBVersion {
+  public static let build: Swift.String
+}
+public enum BBScalingMode : Swift.Int, Swift.Sendable {
+  case fit
+  case zoom
+  case stretch
+  public var stringValue: Swift.String {
+    get
+  }
+  public var videoGravity: AVFoundation.AVLayerVideoGravity {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct BBError : Swift.Error, Swift.Equatable, Swift.Sendable, Swift.CustomStringConvertible {
+  public enum Area : Swift.String, Swift.Sendable {
+    case configuration
+    case network
+    case data
+    case render
+    case overlay
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let area: BBSDK.BBError.Area
+  public let code: Swift.Int
+  public let message: Swift.String
+  public let underlying: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(area: BBSDK.BBError.Area, code: Swift.Int, message: Swift.String, underlying: Swift.String? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: BBSDK.BBError, b: BBSDK.BBError) -> Swift.Bool
+}
+public struct BBDiagnostics : Swift.Sendable, Swift.CustomStringConvertible {
+  public let version: Swift.String
+  public let build: Swift.String
+  public let environment: BBSDK.BBEnvironment
+  public let state: Swift.String
+  public let features: BBSDK.BBFeatureOptions
+  public let render: BBSDK.BBFeatureOptions?
+  public let revision: Swift.UInt64
+  public let issues: [BBSDK.BBOverlayIssue]
+  public let players: Swift.Int
+  public let trackingWindow: CoreMedia.CMTimeRange?
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol BBMediaSessionDataSource : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func mediaSessionCurrentDate(_ session: BBSDK.BBMediaSession) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func mediaSessionTimebase(_ session: BBSDK.BBMediaSession) -> CoreMedia.CMTimebase?
+  #endif
+}
+@_Concurrency.MainActor public protocol BBMediaSessionDelegate : AnyObject {
+  @_Concurrency.MainActor func mediaSessionDidError(_ sender: BBSDK.BBMediaSession, error: BBSDK.BBError)
+  @_Concurrency.MainActor func mediaSessionDidFailOnError(_ sender: BBSDK.BBMediaSession, error: BBSDK.BBError)
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didUpdateGlobalAugmentationState isGlobalAugmentationEnabled: Swift.Bool)
+  @_Concurrency.MainActor func mediaSessionDidBeginShotRendering(adID: Swift.String, logoID: Swift.String, adURL: Swift.String)
+  @_Concurrency.MainActor func mediaSessionDidEndShotRendering(adID: Swift.String, logoID: Swift.String, adURL: Swift.String)
+  @_Concurrency.MainActor func mediaSessionDidRegisterShot(_ sender: BBSDK.BBMediaSession, adID: Swift.String, logoID: Swift.String, adURL: Swift.String, averagePercenOfScreen: CoreFoundation.CGFloat, averagePercenOfAd: CoreFoundation.CGFloat, duration: CoreMedia.CMTime)
+  @_Concurrency.MainActor func mediaSessionDidRegisterTap(_ sender: BBSDK.BBMediaSession, adID: Swift.String, redirectURL: Foundation.URL)
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didPresentOverlay revision: Swift.UInt64)
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didReportOverlayIssue issue: BBSDK.BBOverlayIssue)
+}
+extension BBSDK.BBMediaSessionDelegate {
+  @_Concurrency.MainActor public func mediaSessionDidError(_ sender: BBSDK.BBMediaSession, error: BBSDK.BBError)
+  @_Concurrency.MainActor public func mediaSessionDidFailOnError(_ sender: BBSDK.BBMediaSession, error: BBSDK.BBError)
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didUpdateGlobalAugmentationState isGlobalAugmentationEnabled: Swift.Bool)
+  @_Concurrency.MainActor public func mediaSessionDidBeginShotRendering(adID: Swift.String, logoID: Swift.String, adURL: Swift.String)
+  @_Concurrency.MainActor public func mediaSessionDidEndShotRendering(adID: Swift.String, logoID: Swift.String, adURL: Swift.String)
+  @_Concurrency.MainActor public func mediaSessionDidRegisterShot(_ sender: BBSDK.BBMediaSession, adID: Swift.String, logoID: Swift.String, adURL: Swift.String, averagePercenOfScreen: CoreFoundation.CGFloat, averagePercenOfAd: CoreFoundation.CGFloat, duration: CoreMedia.CMTime)
+  @_Concurrency.MainActor public func mediaSessionDidRegisterTap(_ sender: BBSDK.BBMediaSession, adID: Swift.String, redirectURL: Foundation.URL)
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didPresentOverlay revision: Swift.UInt64)
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didReportOverlayIssue issue: BBSDK.BBOverlayIssue)
+}
+@_Concurrency.MainActor public protocol BBMediaSessionChangeDelegate : AnyObject {
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didChangeBallPosition position: CoreFoundation.CGPoint, timecode: Swift.String, mediaTime: CoreMedia.CMTime)
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didChangePlayers players: [BBSDK.BBPlayer])
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didChangePossessionPlayer player: BBSDK.BBPlayer?)
+  #endif
+  @_Concurrency.MainActor func mediaSession(_ sender: BBSDK.BBMediaSession, didChangeSelectedPlayers identifiers: Swift.Set<Swift.String>, byTap: Swift.Bool)
+}
+extension BBSDK.BBMediaSessionChangeDelegate {
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didChangeBallPosition position: CoreFoundation.CGPoint, timecode: Swift.String, mediaTime: CoreMedia.CMTime)
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didChangePlayers players: [BBSDK.BBPlayer])
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didChangePossessionPlayer player: BBSDK.BBPlayer?)
+  #endif
+  @_Concurrency.MainActor public func mediaSession(_ sender: BBSDK.BBMediaSession, didChangeSelectedPlayers identifiers: Swift.Set<Swift.String>, byTap: Swift.Bool)
+}
+@_Concurrency.MainActor public protocol BBMediaSessionControlling : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor var contentView: UIKit.UIView? { get set }
+  #endif
+  @_Concurrency.MainActor var isAugmentationLayerEnabled: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderVideoLayer: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderAugmentationLayer: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderCPU: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderDeviceFPS: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderStreamFPS: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderResolution: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderTimer: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderLOD: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderTimecode: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderMemory: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRenderClosedCaptions: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRendererMSAA: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRendererMipMap: Swift.Bool { get set }
+  @_Concurrency.MainActor var allowRendererAnisotropic: Swift.Bool { get set }
+  @_Concurrency.MainActor var isDebug: Swift.Bool { get set }
+  @_Concurrency.MainActor var featureOptions: BBSDK.BBFeatureOptions { get set }
+  @_Concurrency.MainActor var scalingMode: BBSDK.BBScalingMode { get set }
+  @_Concurrency.MainActor func toggle(isEnabled: Swift.Bool)
+  @_Concurrency.MainActor func begin()
+  @_Concurrency.MainActor func end()
+  @_Concurrency.MainActor func destroy()
+  @_Concurrency.MainActor func handlePipWillStart()
+  @_Concurrency.MainActor func handlePipDidStart()
+  @_Concurrency.MainActor func handlePipWillStop()
+  @_Concurrency.MainActor func handlePipDidStop()
+  @_Concurrency.MainActor func handlePipRestoreUI()
+  @_Concurrency.MainActor func handleAdStarted()
+  @_Concurrency.MainActor func handleAdFinished()
+  @_Concurrency.MainActor func handleAdBreakStarted()
+  @_Concurrency.MainActor func handleAdBreakEnd()
+  @_Concurrency.MainActor func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor func attachOutputs(_ handler: (AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
+  @_Concurrency.MainActor func detachOutputs(_ handler: (AVFoundation.AVPlayerItemVideoOutput, AVFoundation.AVPlayerItemMetadataOutput, AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
+}
+@_Concurrency.MainActor final public class BBMediaSession : BBSDK.BBMediaSessionControlling {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var contentView: UIKit.UIView? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var dataSource: (any BBSDK.BBMediaSessionDataSource)? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var delegate: (any BBSDK.BBMediaSessionDelegate)? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var changeDelegate: (any BBSDK.BBMediaSessionChangeDelegate)? {
+    get
+    set
+  }
+  #endif
+  @available(*, unavailable, message: "Use init(configuration:additionalDetails:) instead.")
+  @_Concurrency.MainActor public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public init(configuration: BBSDK.BBSessionConfiguration, additionalDetails: [Swift.String : Swift.String]? = nil)
+  #endif
+  @_Concurrency.MainActor final public let configuration: BBSDK.BBSessionConfiguration
+  @_Concurrency.MainActor final public var isAugmentationLayerEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderVideoLayer: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderAugmentationLayer: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderCPU: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderDeviceFPS: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderStreamFPS: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderResolution: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderTimer: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderLOD: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderTimecode: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderMemory: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRenderClosedCaptions: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRendererMSAA: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRendererMipMap: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var allowRendererAnisotropic: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var isDebug: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var scalingMode: BBSDK.BBScalingMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var featureOptions: BBSDK.BBFeatureOptions {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public func toggle(isEnabled: Swift.Bool)
+  @_Concurrency.MainActor final public func begin()
+  @_Concurrency.MainActor final public func end()
+  @_Concurrency.MainActor final public func destroy()
+  @_Concurrency.MainActor final public func handlePipWillStart()
+  @_Concurrency.MainActor final public func handlePipDidStart()
+  @_Concurrency.MainActor final public func handlePipWillStop()
+  @_Concurrency.MainActor final public func handlePipDidStop()
+  @_Concurrency.MainActor final public func handlePipRestoreUI()
+  @_Concurrency.MainActor final public func handleAdStarted()
+  @_Concurrency.MainActor final public func handleAdFinished()
+  @_Concurrency.MainActor final public func handleAdBreakStarted()
+  @_Concurrency.MainActor final public func handleAdBreakEnd()
+  @_Concurrency.MainActor final public func handleExternalTapGestureAt(_ point: CoreFoundation.CGPoint)
+  @objc deinit
+}
+extension BBSDK.BBMediaSession {
+  @_Concurrency.MainActor final public func attachOutputs(_ handler: (_ videoOutput: AVFoundation.AVPlayerItemVideoOutput, _ metadataOutput: AVFoundation.AVPlayerItemMetadataOutput, _ legibleOutput: AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
+  @_Concurrency.MainActor final public func detachOutputs(_ handler: (_ videoOutput: AVFoundation.AVPlayerItemVideoOutput, _ metadataOutput: AVFoundation.AVPlayerItemMetadataOutput, _ legibleOutput: AVFoundation.AVPlayerItemLegibleOutput) -> Swift.Void)
+}
+extension BBSDK.BBMediaSession {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var selectedPlayerIdentifier: Swift.String? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor final public var selectedPlayerIdentifiers: Swift.Set<Swift.String> {
+    get
+  }
+  @_Concurrency.MainActor final public var players: [BBSDK.BBPlayer] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var possessionPlayer: BBSDK.BBPlayer? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func player(at point: CoreFoundation.CGPoint) -> BBSDK.BBPlayer?
+  #endif
+}
+extension BBSDK.BBMediaSession {
+  @discardableResult
+  @_Concurrency.MainActor final public func apply(_ spec: BBSDK.BBOverlaySpec) -> BBSDK.BBOverlayApplyResult
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var appliedSpec: BBSDK.BBOverlaySpec? {
+    get
+  }
+  #endif
+  @_Concurrency.MainActor final public var revision: Swift.UInt64 {
+    get
+  }
+  @_Concurrency.MainActor final public var diagnostics: BBSDK.BBDiagnostics {
+    get
+  }
+}
+public struct BBGameInfo : Swift.Codable {
+  public let bucketName: Swift.String
+  public let customerId: Swift.String?
+  public let customerName: Swift.String?
+  public let offsets: [BBSDK.BBOffset]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BBOffset : Swift.Codable, Swift.Sendable {
+  public let frame: Swift.Int64
+  public let offset: Swift.Int64
+  public let timecode: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension BBSDK.BBVideoResolution : Swift.RawRepresentable {}
+extension BBSDK.BBEnvironment : Swift.RawRepresentable {}
+extension BBSDK.BBSelectionMode : Swift.Hashable {}
+extension BBSDK.BBSide : Swift.Equatable {}
+extension BBSDK.BBSide : Swift.Hashable {}
+extension BBSDK.BBFpsOption : Swift.Equatable {}
+extension BBSDK.BBFpsOption : Swift.Hashable {}
+extension BBSDK.BBScalingMode : Swift.Equatable {}
+extension BBSDK.BBScalingMode : Swift.Hashable {}
+extension BBSDK.BBScalingMode : Swift.RawRepresentable {}
+extension BBSDK.BBError.Area : Swift.Equatable {}
+extension BBSDK.BBError.Area : Swift.Hashable {}
+extension BBSDK.BBError.Area : Swift.RawRepresentable {}
+extension BBSDK.BBMediaSession : Swift.Sendable {}
